@@ -1,0 +1,24 @@
+{
+    "Gmeet": {
+        "item_id": "42463761",
+        "migration": {
+            "gmeet_settings" : "Modules/Gmeet/Database/Migrations/2022_10_05_131155_create_gmeet_settings_table.php",
+            "gmeet_virtual_classes":"Modules/Gmeet/Database/Migrations/2022_10_06_084040_create_gmeet_virtual_classes_table.php",
+            "gmeet_virtual_class_teachers":"Modules/Gmeet/Database/Migrations/2022_10_06_113934_create_gmeet_virtual_class_teachers_table.php",
+            "gmeet_virtual_meetings":"Modules/Gmeet/Database/Migrations/2022_10_07_121536_create_gmeet_virtual_meetings_table.php",
+            "virtual_meeting_users":"Modules/Gmeet/Database/Migrations/2022_10_07_121730_create_gmeet_virtual_meeting_users_table.php",
+            "google_accounts":"Modules/Gmeet/Database/Migrations/2022_10_12_122432_create_google_accounts_table.php",
+            "no_table":"Modules/Gmeet/Database/Migrations/2022_10_14_023532_add_gmeet_day_to_sm_weekends_table.php",
+            "no_table":"Modules/Gmeet/Database/Migrations/2023_01_19_094451_add_column_gmeet_route_permission_table.php"
+        },
+        "versions": [
+            "2.0.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is Gmeet(Google Meet) module for live virtual class and meeting in this system at a time. Thanks for using."
+        ]
+    }
+}

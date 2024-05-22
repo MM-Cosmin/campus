@@ -1,0 +1,4 @@
+1. It's implemented for saas and regular school. 
+2. If enable saas then saas superadmin will get parent registartion settings, if disable saas then school panel will get parent registartion settings. 
+3. After register student from parent registration then need to approve by saas superadmin or school panel. 
+4. 

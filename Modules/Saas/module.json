@@ -1,0 +1,17 @@
+{
+    "name": "Saas",
+    "alias": "saas",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Saas\\Providers\\SaasServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helpers/Helper.php",
+        "Helpers/after_commit_callback.php",
+        "Helpers/before_insert_callback.php"
+    ],
+    "requires": []
+}

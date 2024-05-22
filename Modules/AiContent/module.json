@@ -1,0 +1,13 @@
+{
+    "name": "AiContent",
+    "alias": "aicontent",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AiContent\\Providers\\AiContentServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

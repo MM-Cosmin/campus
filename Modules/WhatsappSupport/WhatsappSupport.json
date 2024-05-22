@@ -1,0 +1,24 @@
+{
+    "WhatsappSupport": {
+        "item_id": "50591298",
+        "migration": {
+            "agents" : "Modules/WhatsappSupport/Database/Migrations/2023_10_23_092339_create_agents_table.php",
+            "agent_times" : "Modules/WhatsappSupport/Database/Migrations/2023_10_23_092357_create_agent_times_table.php",
+            "messages" : "Modules/WhatsappSupport/Database/Migrations/2023_10_23_092411_create_messages_table.php",
+            "settings" : "Modules/WhatsappSupport/Database/Migrations/2023_10_23_092425_create_settings_table.php",
+            "no_table" : "Modules/WhatsappSupport/Database/Migrations/2023_10_26_055348_add_whatsapp_support_sidebarmenu.php"
+        },
+        "names": [
+            
+        ],
+        "versions": [
+            "1.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is WhatsApp Support module. Thanks for using."
+        ]
+    }
+}

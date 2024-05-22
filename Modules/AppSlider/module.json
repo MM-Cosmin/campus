@@ -1,0 +1,15 @@
+{
+    "name": "AppSlider",
+    "alias": "appslider",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\AppSlider\\Providers\\AppSliderServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helpers/helper.php"
+    ],
+    "requires": []
+}

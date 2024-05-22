@@ -1,0 +1,129 @@
+#Admin Panel
+    -Academics
+        -Assign subject and Class routine sidebar active issue
+    -Examination
+        -Setting -> Setup exam rule -> not getting any value
+    -Online exam
+        -Question bank
+            -MCQ Type question can create without creating any option . But that field is required here
+            -Section value radio button is not clickable at the button point 
+        -Online Exam 
+            -Cannot Edit exam , Shows Successful . But actually not updated
+            -Online Exam -> Mark register -> Text field design issue 
+    -Exam Plan
+        -Seat Plan
+            -Wrong search shows error 
+            -Always shows result for first exam , Do not give result for second exam
+            -If select one student then give result for every student 
+    -Communication
+        -Email/SMS Log
+            -Do not show any list in the log 
+    -Admin Section
+        -Admission Query
+            -Add query shows error
+        -Visitor Book
+            -Edit-> Cannot edit , Shows operation failed 
+        -Student Certificate 
+            -Certificate List-> Edit , Shows Error 
+            -If Certificate type is selected Arabic then it do not show  body in the two part
+        -Id Card
+            -Create id card-> do not get background image 
+            -Deletion  of  background image, logo and signature , after adding , Then add a new background image , not working . Effect is not showing.
+            -If user role is Guardian then it get design issue 
+            -After disable address It Changes it's design 
+            -After disable phone  It Changes it's design
+    -Accounts
+        -Reports
+            -Transaction-> Search , Search by Payment Method (Cheque, Paypal, Xendit, Wallet, Khalti) do not give search result . Another options also give error sometimes
+    -Fees
+        -Fees Invoice Settings
+    -Fees Collection
+        -Fees Master 
+            -Fees Master-> Fees Master List-> Assign / View , Empty search show error 
+        -Search Fees Payment
+            -Select drop down do not get design 
+            -Action attribute design issue 
+        -Bank Payment
+            -Bank payment is not showing If payment is done from admin Panel 
+            -Filter option is not working
+        -Fees Carry Forward
+            -Empty search also show operation successful
+    -Bulk Print
+        -ID Card
+            -Picture size shows different in the Parent id card
+        -Fees Invoice Bulk Print Settings
+            -Officer signature is not showing in the cashier copy
+            -Officer's part is not showing
+
+
+
+
+#Student Panel
+    -Dashboard
+        -Cannot visit exam card
+        -View Profile-> Exam , Do not show details
+        -View Profile-> cannot edit profile        
+    -Class Routine
+        -show operation failed 
+    -Leave
+        -Apply Leave
+            -Cannot apply for leave . Button is not working 
+    -Admit Card
+        -Design issue at menu
+        -Empty search show operation error 
+    -Online exam 
+        -View Result
+            -select button drop down do not get design 
+            -Select Button-> Answer Scripts, Date show two times 
+
+
+
+
+#Parent Panel
+    -Dashboard
+        -Subject , Exam , Online Exam , Teacher ,number is showing wrong . Also not clickable
+    -Class Routine 
+        -Design Issue at Class Routine 
+        -Class Routine 2nd tab do not get design 
+    -Lesson Plan 
+        -Sidebar menus are not showing fully
+    -Attendance
+        -Design Issue
+        -Table mode was good for showing attendance
+    -Online Exam 
+        -Sidebar menu is not showing Properly
+        -Exam Result-> Answer Scripts-> Date show multiple time 
+    -Exam
+        -Exam Schedule-> Print , In pdf , Text Alignment Issue
+        -Exam Schedule , Empty Search show error 
+    -Leave 
+        -Apply Leave
+            -Show operation successful but not added in the list , Because leave not assigned 
+            -After Assigned leave , Still it is not added in the list but added in the Admin Panel
+            -Leave type show same leave multiple times in the drop down 
+        -Pending  Leave Request
+            -Permission Issue
+    -Library
+        -Do not get any sub menu
+    -Chat
+        -Blocked User
+            -Wrong photo of admin is showing 
+        -Chat box 
+            -Forwarded message show with html tag
+
+
+
+
+#Teacher Panel
+    -Dashboard
+        -Teacher do not get most of the module. but permission has been assigned
+        -Notification -> Mark all as read do not working properly. All notification cannot read 
+    -Student Info
+        -Student List
+            -Get too much space  at the footer
+    -Chat
+        -Chat Box -> Group message ,  message  cannot be send  in the group, After some time , It Appears
+        -Chat Box-> Forwarded messages show with html tag
+        -Chat box -> Block user option, Do not get any description
+        -Blocked User-> All user photo show same 
+        -Blocked User-> Blocked User  pop up , Do not show photo of user 

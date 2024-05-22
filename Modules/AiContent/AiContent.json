@@ -1,0 +1,24 @@
+{
+    "AiContent": {
+        "item_id": "1011212",
+        "migration": {
+            "ai_templates" : "Modules/AiContent/Database/Migrations/2023_10_19_100644_create_ai_templates_table.php",
+            "ai_template_contents" : "Modules/AiContent/Database/Migrations/2023_10_19_100658_create_ai_template_contents_table.php",
+            "ai_generated_contents" : "Modules/AiContent/Database/Migrations/2023_10_19_100713_create_ai_generated_contents_table.php",
+            "ai_content_settings" : "Modules/AiContent/Database/Migrations/2023_10_20_030735_create_ai_content_settings_table.php",
+            "no_table" : "Modules/AiContent/Database/Migrations/2023_10_26_045838_add_ai_content_sidebarmenu.php"
+        },
+        "names": [
+            
+        ],
+        "versions": [
+            "1.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is AI Content Generator module. Thanks for using."
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "WhatsappSupport",
+    "alias": "whatsappsupport",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WhatsappSupport\\Providers\\WhatsappSupportServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

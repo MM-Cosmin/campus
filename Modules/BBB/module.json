@@ -1,0 +1,13 @@
+{
+    "name": "BBB",
+    "alias": "bbb",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\BBB\\Providers\\BBBServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,731 @@
+{
+    "name": "About",
+    "title": "About",
+    "description": "About",
+    "slug": "aboutus-page",
+    "status": "draft",
+    "home_page": 0,
+    "settings": {
+        "grids": [
+            {
+                "grid": "12x1",
+                "position": "0",
+                "grid_id": "366g37339i",
+                "data": [
+                    [
+                        {
+                            "id": "366g373cd7",
+                            "section_id": "header-breadcumb",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "6x2",
+                "position": "1",
+                "grid_id": "366g3842j5",
+                "data": [
+                    [
+                        {
+                            "id": "366g385d5j",
+                            "section_id": "speech",
+                            "position": "0"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "366g387i30",
+                            "section_id": "speech",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "12x1",
+                "position": "2",
+                "grid_id": "366g39ca4e",
+                "data": [
+                    [
+                        {
+                            "id": "36b9723308",
+                            "section_id": "about-section",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "12x1",
+                "position": "3",
+                "grid_id": "366g3aiidh",
+                "data": [
+                    [
+                        {
+                            "id": "36b970ib49",
+                            "section_id": "facilities",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "12x1",
+                "position": "4",
+                "grid_id": "366g3b8ii9",
+                "data": [
+                    [
+                        {
+                            "id": "366g3bc4be",
+                            "section_id": "counter",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "12x1",
+                "position": "5",
+                "grid_id": "366g3c3871",
+                "data": [
+                    [
+                        {
+                            "id": "366g3c7821",
+                            "section_id": "testimonial",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "12x1",
+                "position": "6",
+                "grid_id": "366g588g41",
+                "data": [
+                    [
+                        {
+                            "id": "366g58a15i",
+                            "section_id": "teacher",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            },
+            {
+                "grid": "6x2",
+                "position": "7",
+                "grid_id": "366g5d3e2e",
+                "data": [
+                    [
+                        {
+                            "id": "36b976ddbg",
+                            "section_id": "cta",
+                            "position": "0"
+                        }
+                    ],
+                    [
+                        {
+                            "id": "366g5d60dc",
+                            "section_id": "faqs",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "section_data": {
+            "3667jg44be": {
+                "settings": {
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "7051697791406": {
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "366g373cd7": {
+                "settings": {
+                    "header_bg_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"hero-bg-2.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/794411-10-2023_1250pmhero-bg-2.jpg\",\"mime\":\"jpg\",\"size\":90795,\"thumbnail\":\"[App_url]/public\\\/storage\\\/optionbuilder\\\/uploads\\\/794411-10-2023_1250pmhero-bg-2.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "left_title": {
+                        "value": "About Us",
+                        "is_array": "0"
+                    },
+                    "right_home": {
+                        "value": "Home",
+                        "is_array": "0"
+                    },
+                    "right_content_title": {
+                        "value": "About Us",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "366g37339i": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g385d5j": {
+                "settings": {
+                    "speech_user_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"2.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/447611-10-2023_1250pm2.jpg\",\"mime\":\"jpg\",\"size\":41661,\"thumbnail\":\"[App_url]/public\\\/storage\\\/optionbuilder\\\/uploads\\\/447611-10-2023_1250pm2.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "speech_heading": {
+                        "value": "Head Of Institution Speech",
+                        "is_array": "0"
+                    },
+                    "speech_user_name": {
+                        "value": "Irina Mikailova",
+                        "is_array": "0"
+                    },
+                    "speech_user_designation": {
+                        "value": "Principle",
+                        "is_array": "0"
+                    },
+                    "speech_description": {
+                        "value": "<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">I stand before you with immense pride and gratitude as the Head of this distinguished institution. My name is Irina Mikailova, and I am honored to serve as the Principal of our beloved school.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Our institution is not just a place of education; it is a vibrant community where ideas flourish, dreams take root, and futures are shaped. As we embark on a new academic year, I am filled with enthusiasm and optimism for the opportunities and successes that lie ahead.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Our dedicated team of educators is committed to nurturing the potential within each student. We strive to provide an environment that fosters creativity, critical thinking, and a love for learning. Together, we will empower our students to face challenges with resilience and approach every opportunity with curiosity.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Collaboration between students, parents, and our esteemed faculty is at the core of our educational philosophy. We believe in the strength of unity, and by working together, we can create an atmosphere that encourages growth and accomplishment.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">As we navigate through the academic year, let us remember the importance of mutual respect, open communication, and a shared commitment to excellence. I encourage each student to embrace the learning journey, ask questions, and pursue their passions. Our faculty is here to guide, support, and inspire.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Parents, your partnership is invaluable. Your involvement in your child's education is a cornerstone of their success. Together, let us create an environment where our students can flourish academically, socially, and emotionally.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">In conclusion, I am excited about the incredible academic and personal achievements that await each member of our school community. Let us embark on this journey together, with enthusiasm, dedication, and a shared vision for excellence.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Thank you for entrusting us with the education and growth of your children. Here's to a successful and rewarding academic year!<\/span><\/div>",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "366g3842j5": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g387i30": {
+                "settings": {
+                    "speech_user_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"1.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/374711-10-2023_1251pm1.jpg\",\"mime\":\"jpg\",\"size\":36474,\"thumbnail\":\"[App_url]/public\\\/storage\\\/optionbuilder\\\/uploads\\\/374711-10-2023_1251pm1.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "speech_heading": {
+                        "value": "Head Of Department Speech",
+                        "is_array": "0"
+                    },
+                    "speech_user_name": {
+                        "value": "Joseph Forster",
+                        "is_array": "0"
+                    },
+                    "speech_user_designation": {
+                        "value": "Head Teacher",
+                        "is_array": "0"
+                    },
+                    "speech_description": {
+                        "value": "<div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">I am Joseph Forster, the Head Teacher of<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za s-lbracket\"> <\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za h-lbracket\">[School<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\"> Name], and it is my pleasure to address you today as the Head of the<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za s-lbracket\"> <\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za h-lbracket\">[Department<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\"> Name] department.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">First and foremost, I want to extend a warm welcome to both returning and new students, faculty members, and parents. As we embark on this academic year, I am filled with excitement and a sense of responsibility for the role we play in shaping the educational experiences of our students.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">The<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za s-lbracket\"> <\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za h-lbracket\">[Department<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\"> Name] department has a long-standing tradition of academic excellence, and I am proud to lead a team of dedicated educators who are passionate about their subjects and committed to the success of our students.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">To our students, I encourage you to approach this academic year with a sense of curiosity and a willingness to embrace new challenges. The<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za s-lbracket\"> <\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za h-lbracket\">[Department<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\"> Name] curriculum is designed not only to impart knowledge but also to cultivate critical thinking, problem-solving skills, and a lifelong love for learning. Your success is our success, and we are here to support you every step of the way.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">To my esteemed colleagues in the<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za s-lbracket\"> <\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za h-lbracket\">[Department<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\"> Name] department, I am confident in our ability to inspire and guide our students toward academic achievement. Your dedication to your subjects and your commitment to fostering an engaging learning environment are the cornerstones of our department's success.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Parents, your partnership with us is invaluable. Your involvement in your child's education contributes significantly to their growth and development. We encourage open communication and collaboration to ensure the best possible educational experience for each student.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">As we navigate the challenges and triumphs of the upcoming academic year, let us approach each day with a spirit of unity, innovation, and a shared commitment to excellence. Together, we can create an environment that nurtures intellectual curiosity and prepares our students for a future of success.<\/span><\/div><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Thank you for your attention, and here's to a successful and fulfilling academic year ahead.<\/span><\/div>",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "366g39d63j": {
+                "settings": {
+                    "about_area_img_1": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-4.jpg\",\"path\":\"optionbuilder\/uploads\/742511-10-2023_1252pmabout-img-4.jpg\",\"mime\":\"jpg\",\"size\":62937,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/742511-10-2023_1252pmabout-img-4.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_img_3": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-2.jpg\",\"path\":\"optionbuilder\/uploads\/756311-10-2023_1252pmabout-img-2.jpg\",\"mime\":\"jpg\",\"size\":37688,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/756311-10-2023_1252pmabout-img-2.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_img_2": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-3.jpg\",\"path\":\"optionbuilder\/uploads\/775411-10-2023_1252pmabout-img-3.jpg\",\"mime\":\"jpg\",\"size\":6167,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/775411-10-2023_1252pmabout-img-3.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "6731698315149": {
+                                "item_image": [
+                                    "{\"type\":\"image\",\"name\":\"feature-icon-1.png\",\"path\":\"optionbuilder\/uploads\/980711-10-2023_1252pmfeature-icon-1.png\",\"mime\":\"png\",\"size\":2208,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/980711-10-2023_1252pmfeature-icon-1.png\"}"
+                                ],
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            },
+                            "1698315250693": {
+                                "item_image": [
+                                    "{\"type\":\"image\",\"name\":\"feature-icon-2.png\",\"path\":\"optionbuilder\/uploads\/270411-10-2023_1252pmfeature-icon-2.png\",\"mime\":\"png\",\"size\":2292,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/270411-10-2023_1252pmfeature-icon-2.png\"}"
+                                ],
+                                "item_heading": "World\u2019s Best Curriculum",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "366g39ca4e": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g3b0e3b": {
+                "settings": {
+                    "about_info_heading": {
+                        "value": "Our Education System Works For You.",
+                        "is_array": "0"
+                    },
+                    "about_info_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. Explore new skills, deepen existing passions, and get lost creativity. What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_info_img": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-5.jpg\",\"path\":\"optionbuilder\/uploads\/667211-10-2023_1253pmabout-img-5.jpg\",\"mime\":\"jpg\",\"size\":34767,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/667211-10-2023_1253pmabout-img-5.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    }
+                }
+            },
+            "366g3aiidh": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g3b8ii9": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g3bc4be": {
+                "settings": {
+                    "counter_heading": {
+                        "value": "What will you Discover?",
+                        "is_array": "0"
+                    },
+                    "counter_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost in creativity.What you find just might surprise and inspire you. With so much to explore, real projects to create,and the support f fellow-creatives, Turitor empower",
+                        "is_array": "0"
+                    },
+                    "view_course_button": {
+                        "value": "View Course",
+                        "is_array": "0"
+                    },
+                    "contact_us_button": {
+                        "value": "Contact Us",
+                        "is_array": "0"
+                    },
+                    "counter_list_items": {
+                        "value": {
+                            "7481698315460": {
+                                "item_number": "649",
+                                "item_heading": "Courses & Videos",
+                                "item_symbol": "+"
+                            },
+                            "1698315486005": {
+                                "item_number": "265",
+                                "item_heading": "Expart teachers",
+                                "item_symbol": "+"
+                            },
+                            "1698315507462": {
+                                "item_number": "4806",
+                                "item_heading": "Total student",
+                                "item_symbol": "+"
+                            },
+                            "1698315526736": {
+                                "item_number": "310",
+                                "item_heading": "Classes complete",
+                                "item_symbol": "+"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "366g3c7821": {
+                "settings": {
+                    "testimonial_sub_heading": {
+                        "value": "#CLIENT TESTIMONIAL",
+                        "is_array": "0"
+                    },
+                    "testimonial_heading": {
+                        "value": "What Clients Say About Us",
+                        "is_array": "0"
+                    },
+                    "testionmonial_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "testionmonial_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "366g3c3871": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g58a15i": {
+                "settings": {
+                    "teacher_sub_heading": {
+                        "value": "Teachers",
+                        "is_array": "0"
+                    },
+                    "teacher_heading": {
+                        "value": "Our Expart Teachers",
+                        "is_array": "0"
+                    },
+                    "teacher_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "teacher_area_column": {
+                        "value": "3",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "366g588g41": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g5d42a4": {
+                "settings": {
+                    "online_admission_header": {
+                        "value": "Online Admission going on session 2022-23",
+                        "is_array": "0"
+                    },
+                    "online_admission_header_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you.",
+                        "is_array": "0"
+                    },
+                    "online_admission_button": {
+                        "value": "Online Admission",
+                        "is_array": "0"
+                    },
+                    "online_admission_link": {
+                        "value": "#",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "366g5d3e2e": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "366g5d60dc": {
+                "settings": {
+                    "faqs_heading": {
+                        "value": "",
+                        "is_array": "0"
+                    },
+                    "faq_datas": {
+                        "value": {
+                            "621698322131": {
+                                "faq_question": "To test new additions to the design system before going live, Infix Education can",
+                                "faq_answer": "<ol start=\"1\" class=\"listtype-number listindent1 list-number1\" style=\"list-style-type: decimal;\"><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Conduct User Acceptance Testing<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za s-lparen\"> <\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za h-lparen\">(UAT)<\/span><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\"> with select users for feedback.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Implement a beta testing phase for real-world user exploration.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Perform A\/B testing to compare with existing design elements.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Ensure cross-browser and device compatibility.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Test for performance and accessibility.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Conduct thorough code and documentation reviews.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Utilize a staging environment for controlled testing.<\/span><\/li><li><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Establish feedback channels for user input.<\/span><\/li><\/ol><div><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">These steps ensure a smooth and user-friendly experience, addressing any issues before the design changes are implemented live.<\/span><\/div>"
+                            },
+                            "1698322142093": {
+                                "faq_question": "Are your product for commercial use?",
+                                "faq_answer": "<p><span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">Yes, Infix Education's product is designed for commercial use. Our comprehensive education solutions are tailored to meet the needs of educational institutions, providing a robust platform for effective school management and improved learning experiences. If you have specific inquiries or would like more information about our products, feel free to contact our support team.<\/span><br><\/p>"
+                            },
+                            "1698322264201": {
+                                "faq_question": "Newest and best-selling pieces in real life?",
+                                "faq_answer": "<span class=\" author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qowz80zsz78zz72zz122zz85zauz85zz84zz80zz65zz88zqj38z87zz67zez72ziz70zaaxz85zfsz81za\">As of my last training cut-off in January 2022, I don't have real-time information on specific products or the newest and best-selling pieces from Infix Education. It's recommended to visit Infix Education's official website, contact their customer support, or check their product catalog for the latest and best-selling offerings. They can provide up-to-date information on their current products and any new releases.<\/span><br>"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "36b970ib49": {
+                "settings": {
+                    "facilities_image_align": {
+                        "value": "right",
+                        "is_array": "0"
+                    },
+                    "facilities_image_upload": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-5.jpg\",\"path\":\"optionbuilder\/uploads\/525601-03-2024_0443pmabout-img-5.jpg\",\"mime\":\"jpg\",\"size\":34767,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/525601-03-2024_0443pmabout-img-5.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "facilities_heading": {
+                        "value": "Our Education System Works For You",
+                        "is_array": "0"
+                    },
+                    "facilities_description": {
+                        "value": "<p style=\"margin-bottom: 30px; color: rgb(85, 85, 85); font-family: Inter, sans-serif; background-color: rgb(255, 255, 255);\">Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. Explore new skills, deepen existing passions, and get lost creativity.<\/p><p style=\"color: rgb(85, 85, 85); font-family: Inter, sans-serif; background-color: rgb(255, 255, 255);\">What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.<\/p>",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36b9723308": {
+                "settings": {
+                    "about_area_img_1": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-4.jpg\",\"path\":\"optionbuilder\/uploads\/145901-03-2024_0446pmabout-img-4.jpg\",\"mime\":\"jpg\",\"size\":62937,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/145901-03-2024_0446pmabout-img-4.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "alignment_left_right": {
+                        "value": "",
+                        "is_array": "0"
+                    },
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "2921704278748": {
+                                "item_image": [
+                                    "{\"type\":\"image\",\"name\":\"feature-icon-1.png\",\"path\":\"optionbuilder\/uploads\/707201-03-2024_0447pmfeature-icon-1.png\",\"mime\":\"png\",\"size\":2208,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/707201-03-2024_0447pmfeature-icon-1.png\"}"
+                                ],
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            },
+                            "1704278833046": {
+                                "item_image": [
+                                    "{\"type\":\"image\",\"name\":\"feature-icon-2.png\",\"path\":\"optionbuilder\/uploads\/513301-03-2024_0447pmfeature-icon-2.png\",\"mime\":\"png\",\"size\":2292,\"thumbnail\":\"[App_url]/public\/storage\/optionbuilder\/uploads\/513301-03-2024_0447pmfeature-icon-2.png\"}"
+                                ],
+                                "item_heading": "World\u2019s Best Curriculum",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "36b976ddbg": {
+                "settings": {
+                    "online_admission_header": {
+                        "value": "Online Admission going on session 2022-23",
+                        "is_array": "0"
+                    },
+                    "online_admission_header_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you.",
+                        "is_array": "0"
+                    },
+                    "online_admission_button": {
+                        "value": "Online Admission",
+                        "is_array": "0"
+                    },
+                    "online_admission_link": {
+                        "value": "https:\/\/aorasoft.com\/",
+                        "is_array": "0"
+                    }
+                }
+            }
+        }
+    }
+}

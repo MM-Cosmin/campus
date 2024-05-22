@@ -1,0 +1,22 @@
+{
+    "AppSlider": {
+        
+        "item_id": "1011010",
+
+        "migration": {
+            "app_sliders":"Modules/AppSlider/Database/Migrations/2021_10_18_050638_create_app_sliders_table.php",
+            "no_table":"Modules/AppSlider/Database/Migrations/2023_01_19_104644_add_column_app_slider__route_permission_table.php"        
+        },
+        "names": [
+        ],
+        "versions": [
+            "1.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is AppSlider module. Thanks for using."
+        ]
+    }
+}

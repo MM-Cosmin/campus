@@ -1,0 +1,24 @@
+{
+    "BBB": {
+        
+        "item_id": "32314367",
+
+        "migration": {
+            "bbb_settings" : "Modules/BBB/Database/Migrations/2020_11_24_123643_create_bbb_settings_table.php",
+            "bbb_meetings" : "Modules/BBB/Database/Migrations/2020_11_24_123936_create_bbb_meetings_table.php",
+            "bbb_meeting_users" : "Modules/BBB/Database/Migrations/2020_11_24_124009_create_bbb_meeting_users_table.php",
+            "bbb_virtual_class_teachers" : "Modules/BBB/Database/Migrations/2020_12_27_091444_bbb_virtual_class_teachers.php",
+            "bbb_virtual_classes" : "Modules/BBB/Database/Migrations/2020_12_27_094638_create_bbb_virtual_classes_table.php",
+            "no_table":"Modules/BBB/Database/Migrations/2023_04_19_092512_add_column_bbb_route_permission_table.php"
+        },
+        "versions": [
+            "2.0.1"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is BigBlueButton module for live virtual class and meeting in this system at a time. Thanks for using."
+        ]
+    }
+}

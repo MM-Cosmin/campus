@@ -1,0 +1,15 @@
+{
+  "version": "8.1.0",
+  "release_date": "12/09/2023",
+  "required_manual_update": false,
+  "min": "8.0.1",
+  "migrations": [
+    "database/migrations/2023_12_13_024824_create_sm_form_downloads_table.php",
+    "database/migrations/2023_12_11_063723_create_sm_donors_table.php",
+    "database/migrations/2023_12_07_121858_create_plugins_table.php",
+    "database/migrations/2023_12_04_083919_create_speech_sliders_table.php",
+    "database/migrations/2023_12_04_122708_update_v8.0.1_to_8.1.0.php"
+  ],
+  "url": "https://spondonit.com/contact",
+  "notes": "This is a bug fixing & new features update."
+}

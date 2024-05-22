@@ -1,0 +1,13 @@
+{
+    "name": "InAppLiveClass",
+    "alias": "inappliveclass",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\InAppLiveClass\\Providers\\InAppLiveClassServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

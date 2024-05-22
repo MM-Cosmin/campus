@@ -1,0 +1,19 @@
+{
+    "InAppLiveClass": {
+        "item_id": "45105126",
+        "migration": [
+            "2022_12_14_162422_AddPermissionForInAppliveClass.php",
+            "2022_12_14_173625_create_in_app_live_class_meetings_table.php",
+            "2022_12_14_183857_create_in_app_live_class_meeting_users_table.php"
+        ],
+        "versions": [
+            "1.1.0"
+        ],
+        "url": [
+            "https://www.aorasoft.com/"
+        ],
+        "notes": [
+            "This InAppLiveClass Module For Infix Lms."
+        ]
+    }
+}

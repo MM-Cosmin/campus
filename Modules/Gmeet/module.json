@@ -1,0 +1,15 @@
+{
+    "name": "Gmeet",
+    "alias": "gmeet",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Gmeet\\Providers\\GmeetServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helpers/GmeetHelper.php"
+    ],
+    "requires": []
+}

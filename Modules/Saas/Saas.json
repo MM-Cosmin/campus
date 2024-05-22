@@ -1,0 +1,72 @@
+{
+    "Saas": {
+        "item_id": "30210110",
+        
+        "migration": {
+            "billing__information": "Modules/Saas/Database/Migrations/2020_04_23_094037_create_billing__information_table.php",
+            "additional_services": "Modules/Saas/Database/Migrations/2020_04_23_094213_create_additional_services_table.php",
+            "sm_saas_packages": "Modules/Saas/Database/Migrations/2020_04_23_094317_create_sm_saas_packages_table.php",
+            "subscriptions": "Modules/Saas/Database/Migrations/2020_04_23_094444_create_subscriptions_table.php",
+            "categories" : "Modules/Saas/Database/Migrations/2020_04_23_094820_create_categories_table.php",
+            "priorities": "Modules/Saas/Database/Migrations/2020_04_23_094821_create_priorities_table.php",
+            "tickets": "Modules/Saas/Database/Migrations/2020_04_23_094822_create_tickets_table.php",
+            "comments" : "Modules/Saas/Database/Migrations/2020_04_23_094823_create_comments_table.php",
+            "infix_invoices" : "Modules/Saas/Database/Migrations/2020_04_23_095304_create_infix_invoices_table.php",
+            "infix_invoice_categories" : "Modules/Saas/Database/Migrations/2020_04_23_095428_create_infix_invoice_categories_table.php",
+            "infix_invoice_settings" : "Modules/Saas/Database/Migrations/2020_04_23_095524_create_infix_invoice_settings_table.php",
+            "infix_invoice_category_links" : "Modules/Saas/Database/Migrations/2020_04_23_095647_create_infix_invoice_category_links_table.php",
+            "infix_invoice_products" : "Modules/Saas/Database/Migrations/2020_04_23_095752_create_infix_invoice_products_table.php",
+            "verify_users" : "Modules/Saas/Database/Migrations/2020_04_23_095913_create_verify_users_table.php",
+            "sm_administrator_notices" : "Modules/Saas/Database/Migrations/2020_04_23_133604_create_sm_administrator_notices_table.php",
+            "saas_school_module_permission_assigns" :"Modules/Saas/Database/Migrations/2020_04_25_073212_create_saas_school_module_permission_assigns_table.php",
+            "saas_settings" :"Modules/Saas/Database/Migrations/2021_09_29_105752_create_saas_settings_table.php",
+            "sm_package_plans" : "Modules/Saas/Database/Migrations/2020_06_23_065442_create_sm_package_plans_table.php",
+            "sm_package_plan_features" : "Modules/Saas/Database/Migrations/2020_06_23_110330_create_sm_package_plan_features_table.php",
+            "sm_saas_payment_gateway_settings" : "Modules/Saas/Database/Migrations/2020_06_24_101619_create_sm_saas_payment_gateway_settings_table.php",
+            "sm_saas_subscription_settings" : "Modules/Saas/Database/Migrations/2020_06_24_120736_create_sm_saas_subscription_settings_table.php",
+            "sm_saas_payment_methods" : "Modules/Saas/Database/Migrations/2020_06_24_101620_create_sm_saas_payment_methods_table.php",
+            "sm_subscription_payments" : "Modules/Saas/Database/Migrations/2020_06_27_081604_create_sm_subscription_payments_table.php",
+            "no_table" : "Modules/Saas/Database/Migrations/2021_09_01_132144_add_custom_domain_to_school_table.php",
+            "no_table" : "Modules/Saas/Database/Migrations/2023_05_08_142343_add_route_to_sass_settings_table.php",
+            "comment_multi_attachments":"Modules/Saas/Database/Migrations/2023_03_20_122806_create_comment_multi_attachments_table.php",
+            "ticket_multi_attachments":"Modules/Saas/Database/Migrations/2023_03_20_124918_create_ticket_multi_attachments_table.php",
+            "no_table":"Modules/Saas/Database/Migrations/2023_05_08_142343_add_route_to_sass_settings_table.php"
+        },
+        "names": [
+            "billing__information",
+            "additional_services",
+            "sm_saas_packages",
+            "subscriptions",
+            "categories",
+            "priorities",
+            "tickets",
+            "comments",
+            "infix_invoices",
+            "infix_invoice_categories",
+            "infix_invoice_settings",
+            "infix_invoice_category_links",
+            "infix_invoice_products",
+            "verify_users",
+            "sm_administrator_notices",
+            "saas_settings",
+            "saas_school_module_permission_assigns",
+            "sm_package_plans",
+            "sm_package_plan_features",
+            "sm_saas_payment_gateway_settings",
+            "sm_saas_payment_methods",
+            "sm_saas_subscription_settings",
+            "sm_subscription_payments",
+            "comment_multi_attachments",
+            "ticket_multi_attachments"
+        ],
+        "versions": [
+            "3.1.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is saas module for multiple school can run in this system at a time. Thanks for using."
+        ]
+    }
+}

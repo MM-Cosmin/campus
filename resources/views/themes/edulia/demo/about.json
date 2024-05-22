@@ -1,0 +1,2927 @@
+{
+    "name": "About",
+    "title": "About",
+    "description": "About",
+    "slug": "about",
+    "status": "draft",
+    "home_page" : 0,
+    "settings": {
+        "grids": [
+            {
+                "grid": "12x1",
+                "position": "0",
+                "grid_id": "3666gg416j",
+                "data": [
+                    [
+                        {
+                            "id": "3666gg8bij",
+                            "section_id": "news-area",
+                            "position": "0"
+                        }
+                    ]
+                ]
+            }
+        ],
+        "section_data": {
+            "364j7ch0a7": {
+                "settings": {
+                    "about_area_img_1": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"about-img-4.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/13309-29-2023_1007amabout-img-4.jpg\",\"mime\":\"jpg\",\"size\":62937,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/13309-29-2023_1007amabout-img-4.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "9741695960461": {
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "364jf801ca": {
+                "settings": {
+                    "about_area_img_1": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"13309-29-2023_1007amabout-img-4.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/951509-29-2023_0505pm13309-29-2023_1007amabout-img-4.jpg\",\"mime\":\"jpg\",\"size\":62937,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/951509-29-2023_0505pm13309-29-2023_1007amabout-img-4.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_img_3": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"463109-28-2023_0601pmorder-3.jpg\",\"path\":\"optionbuilder\/uploads\/958809-29-2023_0506pm463109-28-2023_0601pmorder-3.jpg\",\"mime\":\"jpg\",\"size\":6335,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/958809-29-2023_0506pm463109-28-2023_0601pmorder-3.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_img_2": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"594209-28-2023_0634pmabout-img-3.jpg\",\"path\":\"optionbuilder\/uploads\/217909-29-2023_0507pm594209-28-2023_0634pmabout-img-3.jpg\",\"mime\":\"jpg\",\"size\":6167,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/217909-29-2023_0507pm594209-28-2023_0634pmabout-img-3.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "5311695985283": {
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "364jfche9i": {
+                "settings": {
+                    "news_area_sub_heading": {
+                        "value": "# POPULAR ARTICLES",
+                        "is_array": "0"
+                    },
+                    "news_area_heading": {
+                        "value": "Latest News From Blog",
+                        "is_array": "0"
+                    },
+                    "news_area__description": {
+                        "value": "Choose the most powerful courses and always",
+                        "is_array": "0"
+                    },
+                    "read_more_btn": {
+                        "value": "Read More",
+                        "is_array": "0"
+                    },
+                    "news_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "364jg59504": {
+                "settings": {
+                    "event_sub_heading": {
+                        "value": "#JOIN EVENTS",
+                        "is_array": "0"
+                    },
+                    "event_heading": {
+                        "value": "Join Upcoming Events",
+                        "is_array": "0"
+                    },
+                    "event_description": {
+                        "value": "Choose the most powerful courses and always be on demand",
+                        "is_array": "0"
+                    },
+                    "event_count": {
+                        "value": "2",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "364jg83j37": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "364jg94e82": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "randomly",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "364jgbfhh2": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sho_form_date": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36538109f6": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sho_form_date": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36538hdcbc": {
+                "settings": {
+                    "facilities_image_align": {
+                        "value": "right",
+                        "is_array": "0"
+                    },
+                    "facilities_image_upload": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"AcA2LnWL_400x400.jpg\",\"path\":\"optionbuilder\/uploads\/612310-02-2023_1021amAcA2LnWL_400x400.jpg\",\"mime\":\"jpg\",\"size\":16559,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/612310-02-2023_1021amAcA2LnWL_400x400.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "facilities_heading": {
+                        "value": "AC Smart Classrooms",
+                        "is_array": "0"
+                    },
+                    "facilities_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you. Explore new skills deepen existing passions. What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653a0c508": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sho_form_date": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653a47j3h": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    },
+                    "event_gallery_show_date": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "event_gallery_show_location": {
+                        "value": "0",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653a4f172": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    },
+                    "event_gallery_show_date": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "event_gallery_show_location": {
+                        "value": "0",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653a5g831": {
+                "settings": {
+                    "event_gallery_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "event_gallery_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "event_gallery_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    },
+                    "event_gallery_read_more_btn": {
+                        "value": "View Details",
+                        "is_array": "0"
+                    },
+                    "event_gallery_show_date": {
+                        "value": "0",
+                        "is_array": "0"
+                    },
+                    "event_gallery_show_location": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653b7bjeg": {
+                "settings": {
+                    "switch": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653bb35d2": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_photo": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_name": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_session": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653caj4ai": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Informatio",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_session": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cbd296": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cc453i": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653ccg273": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_photo": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cd3535": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Informationy",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_photo": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_name": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_session": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653ce8d67": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cf1795": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cf55af": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_photo": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cfdad7": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653cg0ha7": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Informationyy",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photoy",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Namey",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session7",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship858899",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_photo": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_name": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_session": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653e1jhd1": {
+                "settings": {
+                    "student_scholarship_table_heading": {
+                        "value": "Student Scholarship Information",
+                        "is_array": "0"
+                    },
+                    "photo_title": {
+                        "value": "Student Photo",
+                        "is_array": "0"
+                    },
+                    "name_title": {
+                        "value": "Name",
+                        "is_array": "0"
+                    },
+                    "session_title": {
+                        "value": "Session",
+                        "is_array": "0"
+                    },
+                    "scholarship_title": {
+                        "value": "Scholarship",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_photo": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_name": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student_session": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "student_scholarship_student": {
+                        "value": "1",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653f45fc1": {
+                "settings": {
+                    "facilities_image_align": {
+                        "value": "right",
+                        "is_array": "0"
+                    },
+                    "facilities_image_upload": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"AcA2LnWL_400x400.jpg\",\"path\":\"optionbuilder\/uploads\/76310-02-2023_0358pmAcA2LnWL_400x400.jpg\",\"mime\":\"jpg\",\"size\":16559,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/76310-02-2023_0358pmAcA2LnWL_400x400.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "facilities_heading": {
+                        "value": "AC Smart Classrooms",
+                        "is_array": "0"
+                    },
+                    "facilities_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you. Explore new skills deepen existing passions. What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3653f4b6ah": {
+                "settings": {
+                    "facilities_image_align": {
+                        "value": "left",
+                        "is_array": "0"
+                    },
+                    "facilities_image_upload": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"addidas.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/714310-02-2023_0359pmaddidas.jpg\",\"mime\":\"jpg\",\"size\":33836,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/714310-02-2023_0359pmaddidas.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "facilities_heading": {
+                        "value": "AC Smart Classrooms",
+                        "is_array": "0"
+                    },
+                    "facilities_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you. Explore new skills deepen existing passions. What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3654h470eh": {
+                "settings": {
+                    "page_heading_title": {
+                        "value": "Outreach,ernational Exchange Program",
+                        "is_array": "0"
+                    },
+                    "page_heading_sub_title": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.te",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3654h4b840": {
+                "settings": {
+                    "page_heading_title": {
+                        "value": "Outreach, Exposure and International Exchange Program",
+                        "is_array": "0"
+                    },
+                    "page_heading_sub_title": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3654haf298": {
+                "settings": {
+                    "upload_image_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    },
+                    "upload_image_grid": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "upload_image_link": {
+                        "value": "",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3654id412c": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "3654if227i": {
+                "settings": {
+                    "page_heading_title": {
+                        "value": "Outreach, Exposure and International Exchange Program",
+                        "is_array": "0"
+                    },
+                    "page_heading_sub_title": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3654j814ga": {
+                "settings": {
+                    "upload_image_file": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"AcA2LnWL_400x400.jpg\",\"path\":\"optionbuilder\/uploads\/110710-03-2023_0128pmAcA2LnWL_400x400.jpg\",\"mime\":\"jpg\",\"size\":16559,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/110710-03-2023_0128pmAcA2LnWL_400x400.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "upload_image_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    },
+                    "upload_image_width_percent": {
+                        "value": "100",
+                        "is_array": "0"
+                    },
+                    "upload_image_link": {
+                        "value": "",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36550483jd": {
+                "settings": {
+                    "upload_image_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    },
+                    "upload_image_width_percent": {
+                        "value": "100",
+                        "is_array": "0"
+                    },
+                    "upload_image_link": {
+                        "value": "",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365518c370": {
+                "settings": {
+                    "upload_image_file": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"addidas.jpg\",\"path\":\"optionbuilder\/uploads\/690410-03-2023_0324pmaddidas.jpg\",\"mime\":\"jpg\",\"size\":33836,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/690410-03-2023_0324pmaddidas.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "upload_image_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    },
+                    "upload_image_width_percent": {
+                        "value": "25",
+                        "is_array": "0"
+                    },
+                    "upload_image_link": {
+                        "value": "",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3655460i82": {
+                "settings": {
+                    "teacher_sub_heading": {
+                        "value": "Teachers",
+                        "is_array": "0"
+                    },
+                    "teacher_heading": {
+                        "value": "Our Expart Teachers",
+                        "is_array": "0"
+                    },
+                    "teacher_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "teacher_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "teacher_button": {
+                        "value": "SEE MORE",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36564978h7": {
+                "settings": {
+                    "course_sub_heading": {
+                        "value": "#TOP COURSES",
+                        "is_array": "0"
+                    },
+                    "course_heading": {
+                        "value": "Find What Fascinates you",
+                        "is_array": "0"
+                    },
+                    "course_description": {
+                        "value": "Choose the most powerful courses and always be on demand",
+                        "is_array": "0"
+                    },
+                    "course_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "course_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "course_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657b93g71": {
+                "settings": {
+                    "header_top_phone": {
+                        "value": "+1 (123) 456-7890",
+                        "is_array": "0"
+                    },
+                    "header_top_phone_display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_top_email": {
+                        "value": "info@spondonit.net",
+                        "is_array": "0"
+                    },
+                    "header_top_email_display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_social_icons": {
+                        "value": {
+                            "9601696484672": {
+                                "header-icon-class": "fab fa-twitter",
+                                "header-icon-url": "https:\/\/twitter.com\/"
+                            },
+                            "1696484678099": {
+                                "header-icon-class": "fab fa-facebook",
+                                "header-icon-url": "wwwww"
+                            },
+                            "1696486626472": {
+                                "header-icon-class": "",
+                                "header-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657ea294d": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "6091696494422": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            },
+                            "1696494440257": {
+                                "header-left-menu-icon-class": "fgrgggegg",
+                                "header-left-menu-label": "",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "831696494422": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "Edulia",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657ea97ge": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "5881696494477": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "3881696494477": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "Edulia",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657f106gb": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "6171696496165": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "1931696496165": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "Edulia",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657ffg734": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "6221696498534": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "9561696498534": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "Edulia",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657h06h7i": {
+                "settings": {
+                    "footer-left-content-column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-column": {
+                        "value": "0",
+                        "is_array": "0"
+                    },
+                    "footer-copy-right-text-display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "footer-copy-right-text": {
+                        "value": "2021 Edulia All rights reserved. Made By CodeThemes",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "6781696502457": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3657h5j2gc": {
+                "settings": {
+                    "footer-left-content-column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-column": {
+                        "value": "8",
+                        "is_array": "0"
+                    },
+                    "footer-copy-right-text-display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "footer-content-links": {
+                        "value": {
+                            "8341696503355": {
+                                "footer-section-title": "Company"
+                            },
+                            "1696503471714": {
+                                "footer-section-title": "",
+                                "footer-section-link": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-section-content-links": {
+                        "value": {
+                            "1341696503355": {
+                                "footer-section-link": "Company"
+                            },
+                            "1696503404204": {
+                                "footer-section-link": ""
+                            },
+                            "1696503406984": {
+                                "footer-section-link": ""
+                            },
+                            "1696503410671": {
+                                "footer-section-link": ""
+                            },
+                            "1696503411842": {
+                                "footer-section-link": ""
+                            },
+                            "1696503417148": {
+                                "footer-section-link": ""
+                            },
+                            "1696503418356": {
+                                "footer-section-link": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-copy-right-text": {
+                        "value": "2021 Edulia All rights reserved. Made By CodeThemes",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "2221696503355": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3657h6i993": {
+                "settings": {
+                    "footer-left-content-column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-column": {
+                        "value": "8",
+                        "is_array": "0"
+                    },
+                    "footer-copy-right-text-display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "footer-content-links": {
+                        "value": {
+                            "1061696503509": {
+                                "footer-section-title": "Company"
+                            },
+                            "1696503519762": {
+                                "footer-section-title": "",
+                                "footer-section-link": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-section-content-links": {
+                        "value": {
+                            "2951696503509": {
+                                "footer-section-link": "Company"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-copy-right-text": {
+                        "value": "2021 Edulia All rights reserved. Made By CodeThemes",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "7091696503509": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            },
+                            "1696503530381": {
+                                "footer-social-icon-class": "",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3657i8g3ic": {
+                "settings": {
+                    "about_info_heading": {
+                        "value": "Our Education System Works For You.",
+                        "is_array": "0"
+                    },
+                    "about_info_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. Explore new skills, deepen existing passions, and get lost creativity. What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657i8i8i2": {
+                "settings": {
+                    "about_info_heading": {
+                        "value": "Our Education System Works For You.",
+                        "is_array": "0"
+                    },
+                    "about_info_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. Explore new skills, deepen existing passions, and get lost creativity. What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3657ijajch": {
+                "settings": {
+                    "footer-left-content-column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-column": {
+                        "value": "8",
+                        "is_array": "0"
+                    },
+                    "footer-copy-right-text-display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "footer-content-links": {
+                        "value": {
+                            "8161696508730": {
+                                "footer-section-title": "Company"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-section-content-links": {
+                        "value": {
+                            "9891696508777": {
+                                "footer-section-link": "Company"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-copy-right-text": {
+                        "value": "2021 Edulia All rights reserved. Made By CodeThemes",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "6861696508730": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3657ijcd32": {
+                "settings": {
+                    "footer-social-icons": {
+                        "value": {
+                            "3401696508743": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3657ijegce": {
+                "settings": {
+                    "footer-social-icons": {
+                        "value": {
+                            "4861696508760": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658gd3i3j": {
+                "settings": {
+                    "footer-left-content-column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-right-content-column": {
+                        "value": "8",
+                        "is_array": "0"
+                    },
+                    "footer-copy-right-text-display": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "footer-content-links": {
+                        "value": {
+                            "2141696565313": {
+                                "footer-section-title": "Company"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-section-content-links": {
+                        "value": {
+                            "5331696565313": {
+                                "footer-section-link": "Company"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-copy-right-text": {
+                        "value": "2021 Edulia All rights reserved. Made By CodeThemes",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "3651696565313": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658ge4j8d": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "7271696565482": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658ge5g52": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "8161696565489": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658hi8e7d": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "5041696569351": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658hge9ea": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "3658hj921a": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "6521696569515": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            },
+                            "1696569524272": {
+                                "footer-widget-label": "",
+                                "footer-widget-url": "",
+                                "footer-widget-open-url": "new_tab"
+                            },
+                            "1696569525643": {
+                                "footer-widget-label": "",
+                                "footer-widget-url": "",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658hj8a9i": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "3658i4959d": {
+                "settings": {
+                    "footer-copy-right-text": {
+                        "value": "\u00a9 2021 Edulia. All rights reserved. Made By CodeThemes.",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "4361696570316": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "3658i49163": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "3658ie59fe": {
+                "settings": {
+                    "footer-copy-right-text": {
+                        "value": "\u00a9 2021 Edulia. All rights reserved. Made By CodeThemes.",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "3271696571886": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            },
+                            "1696571899595": {
+                                "footer-social-icon-class": "",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "36591gji38": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365921eac7": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower sd",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "black",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365921hb1j": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower&nbsp;",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "black",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365922h57b": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blowertt",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "black",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36592cif2b": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower test",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "black",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36592f74cj": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower t",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "black",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36592g8b70": {
+                "settings": {
+                    "footer-copy-right-text": {
+                        "value": "\u00a9 2021 Edulia. All rights reserved. Made By CodeThemes.",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "5181696585031": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "36592gb4j0": {
+                "settings": {
+                    "footer-copy-right-text": {
+                        "value": "\u00a9 2021 Edulia. All rights reserved. Made By CodeThemes.",
+                        "is_array": "0"
+                    },
+                    "footer-social-icons": {
+                        "value": {
+                            "6931696585052": {
+                                "footer-social-icon-class": "fab fa-twitter",
+                                "footer-social-label": "",
+                                "footer-social-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "36592hdi1h": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgba(0,0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3659312d0j": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3659323bj8": {
+                "settings": {
+                    "footer_menu_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"addidas.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/942710-06-2023_0404pmaddidas.jpg\",\"mime\":\"jpg\",\"size\":33836,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/942710-06-2023_0404pmaddidas.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3659406b91": {
+                "settings": {
+                    "footer_menu_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"addidas.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/16910-06-2023_0441pmaddidas.jpg\",\"mime\":\"jpg\",\"size\":33836,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/16910-06-2023_0441pmaddidas.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower&nbsp;",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365954gj02": {
+                "settings": {
+                    "footer_menu_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"addidas.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/632610-06-2023_0546pmaddidas.jpg\",\"mime\":\"jpg\",\"size\":33836,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/632610-06-2023_0546pmaddidas.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36595610b4": {
+                "settings": {
+                    "about_area_img_1": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"AcA2LnWL_400x400.jpg\",\"path\":\"optionbuilder\\\/uploads\\\/726710-06-2023_0549pmAcA2LnWL_400x400.jpg\",\"mime\":\"jpg\",\"size\":16559,\"thumbnail\":\"[App_url]\/public\\\/edulia\\\/optionbuilder\\\/uploads\\\/726710-06-2023_0549pmAcA2LnWL_400x400.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.tt",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "3361696592971": {
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "36595bfhg8": {
+                "settings": {
+                    "footer_menu_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"AcA2LnWL_400x400.jpg\",\"path\":\"optionbuilder\/uploads\/861510-06-2023_0605pmAcA2LnWL_400x400.jpg\",\"mime\":\"jpg\",\"size\":16559,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/861510-06-2023_0605pmAcA2LnWL_400x400.jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(255,255,255)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36595d5egg": {
+                "settings": {
+                    "footer_menu_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"6166a70d94ded.png\",\"path\":\"optionbuilder\/uploads\/192010-06-2023_0609pm6166a70d94ded.png\",\"mime\":\"png\",\"size\":3308,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/192010-06-2023_0609pm6166a70d94ded.png\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog&nbsp;",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365cgg147e": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "7501696821773": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "6531696821773": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365chjgg27": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "6541696825577": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "331696825577": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365d0083f6": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365d00c2b5": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "5101696832099": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365d018ehe": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365d019f58": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "6721696832240": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-widget-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365d01b92b": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "8051696832253": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            },
+                            "1696832260322": {
+                                "footer-widget-label": "Test2",
+                                "footer-widget-url": "test",
+                                "footer-widget-open-url": "new_tab"
+                            },
+                            "1696832265755": {
+                                "footer-widget-label": "",
+                                "footer-widget-url": "",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-widget-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365d2e6ai0": {
+                "settings": {
+                    "course_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "course_area_column": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "course_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365d4ajaca": {
+                "settings": {
+                    "course_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "course_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "course_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e4g0af0": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "5111696911368": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "4671696911368": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e4g2ig0": {
+                "settings": {
+                    "course_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "course_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "course_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e4fj6b9": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "365e4g861h": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e4g9340": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "4081696911440": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-widget-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e4g78hj": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "365e4gbe2c": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "1351696911458": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-widget-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e623c65": {
+                "settings": {
+                    "news_area_sub_heading": {
+                        "value": "# POPULAR ARTICLES",
+                        "is_array": "0"
+                    },
+                    "news_area_heading": {
+                        "value": "Latest News From Blog",
+                        "is_array": "0"
+                    },
+                    "news_area__description": {
+                        "value": "Choose the most powerful courses and always",
+                        "is_array": "0"
+                    },
+                    "read_more_btn": {
+                        "value": "Read More",
+                        "is_array": "0"
+                    },
+                    "news_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e6j9egh": {
+                "settings": {
+                    "course_count": {
+                        "value": "3",
+                        "is_array": "0"
+                    },
+                    "course_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "course_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365e963ag2": {
+                "settings": {
+                    "news_area_sub_heading": {
+                        "value": "# POPULAR ARTICLES",
+                        "is_array": "0"
+                    },
+                    "news_area_heading": {
+                        "value": "Latest News From Blog",
+                        "is_array": "0"
+                    },
+                    "news_area__description": {
+                        "value": "Choose the most powerful courses and always",
+                        "is_array": "0"
+                    },
+                    "read_more_btn": {
+                        "value": "Read More",
+                        "is_array": "0"
+                    },
+                    "news_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365edhfb7g": {
+                "settings": {
+                    "heading": {
+                        "value": "Frequently Asked Questions",
+                        "is_array": "0"
+                    },
+                    "faq_data": {
+                        "value": {
+                            "1861696940448": {
+                                "question": "How can I test new items I add to the design system before making them live?",
+                                "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy."
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365edib0c6": {
+                "settings": {
+                    "heading": {
+                        "value": "Frequently Asked Questions",
+                        "is_array": "0"
+                    },
+                    "faq_data": {
+                        "value": {
+                            "6341696940570": {
+                                "question": "How can I test new items I add to the design system before making them live?",
+                                "answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy."
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365i4e11j9": {
+                "settings": {
+                    "faqs_heading": {
+                        "value": "Frequently Asked Questionsupdate",
+                        "is_array": "0"
+                    },
+                    "faq_datas": {
+                        "value": {
+                            "6231697167051": {
+                                "faq_question": "How can I test new items I add to the design system before making them live?",
+                                "faq_answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy."
+                            },
+                            "1697167089000": {
+                                "faq_question": "",
+                                "faq_answer": ""
+                            },
+                            "1697167141114": {
+                                "faq_question": "Test oyaaa",
+                                "faq_answer": "sfgg kjdfgdfgndfgdfg"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365i4fcce2": {
+                "settings": {
+                    "faqs_heading": {
+                        "value": "",
+                        "is_array": "0"
+                    },
+                    "faq_datas": {
+                        "value": {
+                            "2991697167303": {
+                                "faq_question": "How can I test new items I add to the design system before making them live?",
+                                "faq_answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy."
+                            },
+                            "1697167308999": {
+                                "faq_question": "2nd",
+                                "faq_answer": "Comment for secound"
+                            },
+                            "1697167315998": {
+                                "faq_question": "third",
+                                "faq_answer": "comment third"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365i640cdg": {
+                "settings": {
+                    "header_bg_image": {
+                        "value": [
+                            "{\"type\":\"image\",\"name\":\"computer-icons-user-profile-avatar (1).jpg\",\"path\":\"optionbuilder\/uploads\/586910-13-2023_1038amcomputer-icons-user-profile-avatar (1).jpg\",\"mime\":\"jpg\",\"size\":11454,\"thumbnail\":\"[App_url]\/public\/edulia\/optionbuilder\/uploads\/586910-13-2023_1038amcomputer-icons-user-profile-avatar (1).jpg\"}"
+                        ],
+                        "is_array": "1"
+                    },
+                    "left_title": {
+                        "value": "Home Details",
+                        "is_array": "0"
+                    },
+                    "right_home": {
+                        "value": "Home",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i652557": {
+                "settings": {
+                    "faqs_heading": {
+                        "value": "Frequently Asked Questions",
+                        "is_array": "0"
+                    },
+                    "faq_datas": {
+                        "value": {
+                            "1541697172020": {
+                                "faq_question": "How can I test new items I add to the design system before making them live?",
+                                "faq_answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy."
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365i7gdg5b": {
+                "settings": {
+                    "left_title": {
+                        "value": "Home Details",
+                        "is_array": "0"
+                    },
+                    "right_home": {
+                        "value": "Home",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i7j3dc0": {
+                "settings": {
+                    "faqs_heading": {
+                        "value": "Frequently Asked Questions",
+                        "is_array": "0"
+                    },
+                    "faq_datas": {
+                        "value": {
+                            "9731697177471": {
+                                "faq_question": "How can I test new items I add to the design system before making them live?",
+                                "faq_answer": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries Lorem Ipsum is simply dummy."
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365i805he1": {
+                "settings": {
+                    "about_area_heading": {
+                        "value": "When Ambition Meets Opportunity.",
+                        "is_array": "0"
+                    },
+                    "about_area_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity What you find just might surprise and inspire you. With so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    },
+                    "about_area_list_items": {
+                        "value": {
+                            "2691697177649": {
+                                "item_heading": "International Certification",
+                                "item_description": "You can start and finish one of these popular courses in under our site"
+                            }
+                        },
+                        "is_array": "1"
+                    }
+                }
+            },
+            "365i807e5h": {
+                "settings": {
+                    "facilities_image_align": {
+                        "value": "left",
+                        "is_array": "0"
+                    },
+                    "facilities_heading": {
+                        "value": "AC Smart Classrooms",
+                        "is_array": "0"
+                    },
+                    "facilities_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you. Explore new skills deepen existing passions. What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i8095bi": {
+                "settings": {
+                    "facilities_image_align": {
+                        "value": "left",
+                        "is_array": "0"
+                    },
+                    "facilities_heading": {
+                        "value": "AC Smart Classrooms",
+                        "is_array": "0"
+                    },
+                    "facilities_description": {
+                        "value": "Explore new skills, deepen existing passions, and get lost creativity what you find just might surprise and inspire you. Explore new skills deepen existing passions. What you find just might surprise and inspire you with so much to explore isn\u2019t existing passions, and get lost in creativity.",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i80bdad": {
+                "settings": {
+                    "footer-right-content-text": {
+                        "value": "Matie boy chancer argy bargy blower golly gosh butty bog matie boy chancer argybar gy blower gollygosh butty bog. Blower golly gosh butty bog matie boychan argybargy blower",
+                        "is_array": "0"
+                    },
+                    "footer-content-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i80c71i": {
+                "settings": {
+                    "footer-widget-heading": {
+                        "value": "Company",
+                        "is_array": "0"
+                    },
+                    "footer-widget-links": {
+                        "value": {
+                            "8951697177704": {
+                                "footer-widget-label": "About Us",
+                                "footer-widget-url": "https:\/\/test.com\/",
+                                "footer-widget-open-url": "new_tab"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "footer-widget-bg-color": {
+                        "value": "rgb(0,0,0)",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i83cc62": {
+                "settings": {
+                    "header-left-menus": {
+                        "value": {
+                            "2341697178183": {
+                                "header-left-menu-icon-class": "fa fa-phone-alt",
+                                "header-left-menu-label": "+1 (123) 456-7890",
+                                "header-left-menu-icon-url": ""
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header-right-menus": {
+                        "value": {
+                            "2441697178183": {
+                                "header-right-icon-class": "fab fa-twitter",
+                                "header-right-menu-label": "",
+                                "header-right-icon-url": "https:\/\/twitter.com\/"
+                            }
+                        },
+                        "is_array": "1"
+                    },
+                    "header_menu_search": {
+                        "value": "1",
+                        "is_array": "0"
+                    },
+                    "header_menu_search_placeholder": {
+                        "value": "Search...",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i83b983": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "365i871eai": {
+                "settings": {
+                    "left_title": {
+                        "value": "Home Details",
+                        "is_array": "0"
+                    },
+                    "right_home": {
+                        "value": "Home",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365i9j0fa4": {
+                "settings": {
+                    "left_title": {
+                        "value": "Home Details",
+                        "is_array": "0"
+                    },
+                    "right_home": {
+                        "value": "Home",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365ia7dhhi": {
+                "settings": {
+                    "divider_style": {
+                        "value": "dotted",
+                        "is_array": "0"
+                    },
+                    "divider_width": {
+                        "value": "20",
+                        "is_array": "0"
+                    },
+                    "divider_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365iaeb7ih": {
+                "settings": {
+                    "divider_style": {
+                        "value": "solid",
+                        "is_array": "0"
+                    },
+                    "divider_width": {
+                        "value": "50",
+                        "is_array": "0"
+                    },
+                    "divider_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365ib0g0g3": {
+                "settings": {
+                    "divider_style": {
+                        "value": "ridge",
+                        "is_array": "0"
+                    },
+                    "divider_width": {
+                        "value": "100",
+                        "is_array": "0"
+                    },
+                    "divider_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365ib82bde": {
+                "settings": {
+                    "divider_style": {
+                        "value": "solid",
+                        "is_array": "0"
+                    },
+                    "divider_width": {
+                        "value": "100",
+                        "is_array": "0"
+                    },
+                    "divider_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365ib848e8": {
+                "settings": {
+                    "left_title": {
+                        "value": "Home Details",
+                        "is_array": "0"
+                    },
+                    "right_home": {
+                        "value": "Home",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "365ib85g73": {
+                "settings": {
+                    "divider_style": {
+                        "value": "solid",
+                        "is_array": "0"
+                    },
+                    "divider_width": {
+                        "value": "100",
+                        "is_array": "0"
+                    },
+                    "divider_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618ahh20": {
+                "settings": {
+                    "spacer_height": {
+                        "value": "100",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618e18dg": {
+                "settings": {
+                    "spacer_height": {
+                        "value": "70",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618e3gcj": {
+                "settings": {
+                    "noticeboard_title": {
+                        "value": "Notice Board",
+                        "is_array": "0"
+                    },
+                    "noticeboard_show_more": {
+                        "value": "View All",
+                        "is_array": "0"
+                    },
+                    "noticeboard_show_more_link": {
+                        "value": "",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618eafdf": {
+                "settings": {
+                    "divider_style": {
+                        "value": "solid",
+                        "is_array": "0"
+                    },
+                    "divider_width": {
+                        "value": "100",
+                        "is_array": "0"
+                    },
+                    "divider_alignment": {
+                        "value": "center",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618echfg": {
+                "settings": {
+                    "spacer_height": {
+                        "value": "100",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618efb4j": {
+                "settings": {
+                    "noticeboard_title": {
+                        "value": "Notice Board ttt",
+                        "is_array": "0"
+                    },
+                    "noticeboard_show_more": {
+                        "value": "View All ttt",
+                        "is_array": "0"
+                    },
+                    "noticeboard_show_more_link": {
+                        "value": "",
+                        "is_array": "0"
+                    },
+                    "notice_gallery_count": {
+                        "value": "2",
+                        "is_array": "0"
+                    },
+                    "notice_gallery_sorting": {
+                        "value": "desc",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "3662ai85e6": {
+                "settings": {
+                    "spacer_height": {
+                        "value": "100",
+                        "is_array": "0"
+                    }
+                }
+            },
+            "36618ec8fb": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "3666gg416j": {
+                "styles": {
+                    "content_width": "",
+                    "width-height-type": "px",
+                    "width": "",
+                    "height": "",
+                    "min-width": "",
+                    "max-width": "",
+                    "min-height": "",
+                    "max-height": "",
+                    "margin-type": "px",
+                    "margin-top": "",
+                    "margin-right": "",
+                    "margin-bottom": "",
+                    "margin-left": "",
+                    "padding-type": "px",
+                    "padding-top": "",
+                    "padding-right": "",
+                    "padding-bottom": "",
+                    "padding-left": "",
+                    "z-index": "",
+                    "classes": "",
+                    "custom_attributes": "",
+                    "background-size": "",
+                    "background-position": ""
+                }
+            },
+            "3666gg8bij": {
+                "settings": {
+                    "news_area_sub_heading": {
+                        "value": "# POPULAR ARTICLES",
+                        "is_array": "0"
+                    },
+                    "news_area_heading": {
+                        "value": "Latest News From Blog",
+                        "is_array": "0"
+                    },
+                    "news_area__description": {
+                        "value": "Choose the most powerful courses and always",
+                        "is_array": "0"
+                    },
+                    "read_more_btn": {
+                        "value": "Read More",
+                        "is_array": "0"
+                    },
+                    "news_count": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_area_column": {
+                        "value": "4",
+                        "is_array": "0"
+                    },
+                    "news_sorting": {
+                        "value": "asc",
+                        "is_array": "0"
+                    }
+                }
+            }
+        }
+    }
+}

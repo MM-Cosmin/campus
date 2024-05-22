@@ -1,0 +1,20 @@
+{
+    "ParentRegistration": {
+        "item_id": "27762693",
+        "migration": {
+
+        },
+        "names": [
+          
+        ],
+        "versions": [
+            "3.0.0"
+        ],
+        "url": [
+            "https://spondonit.com/contact"
+        ],
+        "notes": [
+            "This is Parent Registration module for Registration. Thanks for using."
+        ]
+    }
+}
