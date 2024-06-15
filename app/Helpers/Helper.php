@@ -644,7 +644,7 @@ if (!function_exists('send_mail')) {
 
         $sender_email = $setting->from_email;
         $sender_name = $setting->from_name;
-        $email_driver = $setting->mail_driver;
+        $email_driver = "smtp";
 
         $subject = getTempleteDetails($purpose, 'email')->subject;
 
@@ -653,17 +653,17 @@ if (!function_exists('send_mail')) {
 
         try {
             if (Schema::hasTable('sm_email_settings')) {
-                if($email_driver == "smtp"){
+                if ($email_driver == "smtp") {
                     $config = Auth::check() ? DB::table('sm_email_settings')
-                    ->where('school_id', Auth::user()->school_id)
-                    ->where('mail_driver', 'smtp')
-                    ->first() :
-                    DB::table('sm_email_settings')
-                    ->where('mail_driver', 'smtp')
-                    ->first();
+                        ->where('school_id', Auth::user()->school_id)
+                        ->where('mail_driver', 'smtp')
+                        ->first() :
+                        DB::table('sm_email_settings')
+                        ->where('mail_driver', 'smtp')
+                        ->first();
 
                     if ($config) {
-                        Config::set('mail.mailers.smtp.transport', 'smtp');
+                        Config::set('mail.default', 'smtp');
                         Config::set('mail.from.from', $config->mail_username);
                         Config::set('mail.from.name', $config->from_name);
                         Config::set('mail.mailers.smtp.host', $config->mail_host);
@@ -672,7 +672,7 @@ if (!function_exists('send_mail')) {
                         Config::set('mail.mailers.smtp.password', $config->mail_password);
                         Config::set('mail.mailers.smtp.encryption', $config->mail_encryption);
                     }
-                }else{
+                } else {
                     Config::set('mail.default', 'sendmail');
                 }
             }
@@ -683,8 +683,8 @@ if (!function_exists('send_mail')) {
             $emailData['sender_name'] = $sender_name;
             $emailData['sender_email'] = $sender_email;
             $emailData['subject'] = $subject;
-            
-            
+
+
             dispatch(new EmailJob($body, $emailData));
         } catch (\Exception $e) {
             Log::info($e);
@@ -1334,7 +1334,7 @@ if (!function_exists('generalSetting')) {
                 $generalSetting =  SmGeneralSettings::where('school_id', request('school_id'))->first();
             } else {
                 // $generalSetting = Auth::check() ? SmGeneralSettings::where('school_id', Auth::user()->school_id)->first() : SmGeneralSettings::where('school_id',app('school')->id)->first();
-                $generalSetting = Auth::check() ? SmGeneralSettings::where('school_id', Auth::user()->school_id)->first() : SmGeneralSettings::where('school_id',1)->first();
+                $generalSetting = Auth::check() ? SmGeneralSettings::where('school_id', Auth::user()->school_id)->first() : SmGeneralSettings::where('school_id', 1)->first();
             }
         }
 
@@ -1525,7 +1525,7 @@ if (!function_exists('academicYears')) {
 }
 
 if (!function_exists('subjectFullMark')) {
-    function subjectFullMark($examtype, $subject, $class_id=null, $section_id=null)
+    function subjectFullMark($examtype, $subject, $class_id = null, $section_id = null)
     {
         try {
             $full_mark = SmExam::withOutGlobalScopes();
@@ -1537,12 +1537,12 @@ if (!function_exists('subjectFullMark')) {
             } else {
                 $full_mark = $full_mark->where('subject_id', $subject);
             }
-            if(moduleStatusCheck('University')){
+            if (moduleStatusCheck('University')) {
                 $full_mark = $full_mark->first('exam_mark')->exam_mark;
-            }else{
+            } else {
                 $full_mark = $full_mark->where('class_id', $class_id)->where('section_id', $section_id)->first('exam_mark')->exam_mark;
             }
-            
+
 
             return $full_mark;
         } catch (\Exception $e) {
@@ -3812,11 +3812,11 @@ if (!function_exists('getSubjectAttendance')) {
 if (!function_exists('activeTheme')) {
     function activeTheme()
     {
-       try{
+        try {
             return generalSetting()->active_theme;
-       }catch(\Exception $e){
-           return null ;
-       }
+        } catch (\Exception $e) {
+            return null;
+        }
     }
 }
 if (!function_exists('userLocal')) {
@@ -3878,8 +3878,8 @@ if (!function_exists('_trans')) {
                     $new_trns = explode('.', $value);
                     $file_name = $new_trns[0];
                     // $trans_key = $new_trns[1];
-                    $trans_key = str_replace($file_name.'.','',$value);
-                   
+                    $trans_key = str_replace($file_name . '.', '', $value);
+
 
                     $file_path = $langPath . '' . $file_name . '.php';
                     if (file_exists($file_path)) {
@@ -3929,7 +3929,6 @@ if (!function_exists('_trans')) {
 
                             file_put_contents($file_path, $str, $flags = 0, $context = null);
                         }
-
                     } else {
 
                         fopen($file_path, 'w');
@@ -3974,8 +3973,6 @@ if (!function_exists('_trans')) {
                         $str .= $end;
 
                         file_put_contents($file_path, $str, $flags = 0, $context = null);
-
-
                     }
 
                     return _translation($value);
@@ -4027,11 +4024,9 @@ if (!function_exists('_trans')) {
 
                     file_put_contents($file_path, $str, $flags = 0, $context = null);
                     return _translation($value);
-
                 }
                 return _translation($value);
             }
-
         } catch (Exception $exception) {
             dd($exception);
             return $value;
@@ -4076,7 +4071,7 @@ if (!function_exists('latterAvater')) {
     }
 }
 
-if (!function_exists('getProfileImage')){
+if (!function_exists('getProfileImage')) {
     function getProfileImage($user_id)
     {
         $user = User::find($user_id);
