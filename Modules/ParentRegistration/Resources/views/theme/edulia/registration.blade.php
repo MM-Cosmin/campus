@@ -90,8 +90,8 @@ $setting = generalSetting();
                         <div class="reg_wrapper">
                             @if ($reg_setting->registration_permission == 1)
                                 <form method="POST" class=""
-                                    action="{{ route('parentregistration-student-store') }}"
-                                    id="parent-registration" enctype="multipart/form-data">
+                                    action="{{ route('parentregistration-student-store') }}" id="parent-registration"
+                                    enctype="multipart/form-data">
                             @endif
                             {{ csrf_field() }}
                             @if ($errors->any())
@@ -111,8 +111,8 @@ $setting = generalSetting();
                                                 <span>*</span></label>
                                             <select name="academic_year" class="input-control-input"
                                                 id="select-academic-year">
-                                                <option data-display="@lang('student.select_academic_year')"
-                                                    value="">@lang('student.select_academic_year')</option>
+                                                <option data-display="@lang('student.select_academic_year')" value="">
+                                                    @lang('student.select_academic_year')</option>
                                                 @foreach ($academic_years as $academic_year)
                                                     <option value="{{ $academic_year->id }}">
                                                         {{ $academic_year->year }}
@@ -121,32 +121,50 @@ $setting = generalSetting();
                                                 @endforeach
                                             </select>
                                             @if ($errors->has('academic_year'))
-                                                <span class="text-danger" >{{ @$errors->first('academic_year') }}</span>
+                                                <span class="text-danger">{{ @$errors->first('academic_year') }}</span>
                                             @endif
                                         </div>
                                     @endif
                                     @if (in_array('class', $active_fields))
                                         <div class="input-control" id="class-div">
                                             <label for="#" class="input-control-label">
-                                                {{ field_label($fields, 'class') ? field_label($fields, 'class') : __('student.class') }} <span>*</span>
+                                                {{ field_label($fields, 'class') ? field_label($fields, 'class') : __('student.class') }}
+                                                <span>*</span>
                                             </label>
                                             <select name="class" class="input-control-input" id="select-class">
                                                 <option data-display="{{ field_label($fields, 'class') }}"
                                                     value="">{{ field_label($fields, 'class') }} </option>
                                             </select>
                                             @if ($errors->has('class'))
-                                                <span class="text-danger" >{{ @$errors->first('class') }}</span>
+                                                <span class="text-danger">{{ @$errors->first('class') }}</span>
                                             @endif
                                         </div>
                                     @endif
                                     @if (in_array('section', $active_fields))
                                         <div class="input-control" id="section-div">
-                                            <label for="#"
-                                                class="input-control-label">@lang('student.section') </label>
+                                            <label for="#" class="input-control-label">@lang('student.section') </label>
                                             <select name="section" class="input-control-input" id="select-section">
                                                 <option data-display="{{ field_label($fields, 'section') }}"
                                                     value="">{{ field_label($fields, 'section') }} </option>
                                             </select>
+                                        </div>
+                                    @endif
+                                    @if (in_array('shift_id', $active_fields))
+                                        <div class="input-control" id="select_shift_id">
+                                            <label for="#" class="input-control-label">@lang('common.shift')
+                                            </label>
+                                            <select name="shift_id" class="input-control-input" id="select_shift">
+                                                <option data-display="@lang('common.select_shift')" value="">
+                                                    @lang('common.select_shift')</option>
+                                                @foreach ($shifts as $shift)
+                                                    <option value="{{ $shift->id }}">
+                                                        {{ $shift->name }}
+                                                    </option>
+                                                @endforeach
+                                            </select>
+                                            @if ($errors->has('shift_id'))
+                                                <span class="text-danger">{{ @$errors->first('shift_id') }}</span>
+                                            @endif
                                         </div>
                                     @endif
                                 </div>
@@ -166,7 +184,7 @@ $setting = generalSetting();
                                                 class="input-control-input"
                                                 placeholder='{{ field_label($fields, 'first_name') }}'>
                                             @if ($errors->has('first_name'))
-                                                <span class="text-danger" >{{ @$errors->first('first_name') }}</span>
+                                                <span class="text-danger">{{ @$errors->first('first_name') }}</span>
                                             @endif
                                         </div>
                                     @endif
@@ -179,7 +197,7 @@ $setting = generalSetting();
                                                 class="input-control-input"
                                                 placeholder='{{ field_label($fields, 'last_name') }}'>
                                             @if ($errors->has('last_name'))
-                                                <span class="text-danger" >{{ @$errors->first('last_name') }}</span>
+                                                <span class="text-danger">{{ @$errors->first('last_name') }}</span>
                                             @endif
                                         </div>
                                     @endif
@@ -192,7 +210,8 @@ $setting = generalSetting();
                                                 class="input-control-input mydob" placeholder='{{ date('m/d/Y') }}'
                                                 id='datepicker3'>
                                             @if ($errors->has('date_of_birth'))
-                                                <span class="text-danger" >{{ @$errors->first('date_of_birth') }}</span>
+                                                <span
+                                                    class="text-danger">{{ @$errors->first('date_of_birth') }}</span>
                                             @endif
                                         </div>
                                     @endif
@@ -238,7 +257,8 @@ $setting = generalSetting();
                                                 class="input-control-input" value="{{ old('student_mobile') }}"
                                                 placeholder='{{ field_label($fields, 'phone_number') }}'>
                                             @if ($errors->has('student_mobile'))
-                                                <span class="text-danger" >{{ @$errors->first('student_mobile') }}</span>
+                                                <span
+                                                    class="text-danger">{{ @$errors->first('student_mobile') }}</span>
                                             @endif
                                         </div>
                                     @endif
@@ -448,7 +468,8 @@ $setting = generalSetting();
                                         <div class="position-relative input-control file_uploader">
                                             <label for="#"
                                                 class="input-control-label">{{ field_label($fields, 'fathers_photo') }}</label>
-                                            <input class="input-control-input" id="placeholderFathersName" type="text"
+                                            <input class="input-control-input" id="placeholderFathersName"
+                                                type="text"
                                                 placeholder="{{ field_label($fields, 'fathers_photo') }}" readonly>
                                             <button class="" type="button">
                                                 <label class="primary-btn small fix-gr-bg"
@@ -497,7 +518,8 @@ $setting = generalSetting();
                                         <div class="position-relative input-control file_uploader">
                                             <label for="#"
                                                 class="input-control-label">{{ field_label($fields, 'mothers_photo') }}</label>
-                                            <input class="input-control-input" id="placeholderMothersName" type="text"
+                                            <input class="input-control-input" id="placeholderMothersName"
+                                                type="text"
                                                 placeholder="{{ field_label($fields, 'mothers_photo') }}" readonly>
                                             <button class="" type="button">
                                                 <label class="primary-btn small fix-gr-bg"
@@ -508,28 +530,25 @@ $setting = generalSetting();
                                         </div>
                                     @endif
                                 </div>
-                                
+
                                 @if (in_array('relation', $active_fields))
                                     <div class="input-control select-guardian">
                                         <span>{{ field_label($fields, 'relation') }}:</span>
                                         <label for="relationFather" class="page_radio">
                                             <input class="relationButton" type="radio" value="F"
-                                                name='relationButton'
-                                                id="relationFather"
+                                                name='relationButton' id="relationFather"
                                                 {{ old('relationButton', 'F') == 'F' ? 'checked' : '' }}>
                                             <span class="page_radio_title">@lang('student.father')</span>
                                         </label>
                                         <label for="relationMother" class="page_radio">
                                             <input class="relationButton" type="radio" value="M"
-                                                name='relationButton'
-                                                id="relationMother"
+                                                name='relationButton' id="relationMother"
                                                 {{ old('relationButton', 'M') == 'M' ? 'checked' : '' }}>
                                             <span class="page_radio_title">@lang('student.mother')</span>
                                         </label>
                                         <label for="relationOther" class="page_radio">
                                             <input class="relationButton" type="radio" value="O"
-                                                name='relationButton'
-                                                id="relationOther"
+                                                name='relationButton' id="relationOther"
                                                 {{ old('relationButton', 'O') == 'O' ? 'checked' : '' }}>
                                             <span class="page_radio_title">@lang('student.Other')</span>
                                         </label>
@@ -557,7 +576,8 @@ $setting = generalSetting();
                                                 placeholder='{{ field_label($fields, 'guardians_email') }}'
                                                 value="{{ old('guardian_email') }}">
                                             @if ($errors->has('guardian_email'))
-                                                <span class="text-danger" >{{ @$errors->first('guardian_email') }}</span>
+                                                <span
+                                                    class="text-danger">{{ @$errors->first('guardian_email') }}</span>
                                             @endif
                                         </div>
                                     @endif
@@ -578,8 +598,7 @@ $setting = generalSetting();
                                                 class="input-control-label">{{ field_label($fields, 'guardians_occupation') }}
                                             </label>
                                             <input type="text" name='guardians_occupation'
-                                                id="guardians_occupation"
-                                                class="input-control-input"
+                                                id="guardians_occupation" class="input-control-input"
                                                 placeholder='{{ field_label($fields, 'guardians_occupation') }}'
                                                 value="{{ old('guardians_occupation') }}">
                                         </div>
@@ -621,18 +640,18 @@ $setting = generalSetting();
                                                 value="{{ old('current_address') }}">
                                         </div>
                                     @endif
-                                    
+
                                 </div>
 
                                 @if (in_array('permanent_address', $active_fields))
-                                        <div class="input-control">
-                                            <label for="permanent_address"
-                                                class="input-control-label">{{ field_label($fields, 'permanent_address') }}</label>
-                                            <input type="text" name='permanent_address' id="permanent_address"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'permanent_address') }}'
-                                                value="{{ old('permanent_address') }}">
-                                        </div>
+                                    <div class="input-control">
+                                        <label for="permanent_address"
+                                            class="input-control-label">{{ field_label($fields, 'permanent_address') }}</label>
+                                        <input type="text" name='permanent_address' id="permanent_address"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'permanent_address') }}'
+                                            value="{{ old('permanent_address') }}">
+                                    </div>
                                 @endif
 
                                 <div class="input-control">
@@ -652,8 +671,7 @@ $setting = generalSetting();
                                         <div class="input-control">
                                             <label for="route"
                                                 class="input-control-label">{{ field_label($fields, 'route') }}</label>
-                                            <select name="route" id="route"
-                                                class="input-control-input">
+                                            <select name="route" id="route" class="input-control-input">
                                                 <option data-display="{{ field_label($fields, 'route') }} "
                                                     value="">{{ field_label($fields, 'route') }}
                                                 </option>
@@ -669,8 +687,7 @@ $setting = generalSetting();
                                         <div class="input-control" id="select_vehicle_div">
                                             <label for="vehicle"
                                                 class="input-control-label">{{ field_label($fields, 'vehicle') }}</label>
-                                            <select name="vehicle" id="selectVehicle"
-                                                class="input-control-input">
+                                            <select name="vehicle" id="selectVehicle" class="input-control-input">
                                                 <option data-display="{{ field_label($fields, 'vehicle') }} "
                                                     value="">{{ field_label($fields, 'vehicle') }}
                                                 </option>
@@ -751,8 +768,7 @@ $setting = generalSetting();
                                             <label for="previous_school_details"
                                                 class="input-control-label">{{ field_label($fields, 'previous_school_details') }}</label>
                                             <input type="text" name='previous_school_details'
-                                                id="previous_school_details"
-                                                class="input-control-input"
+                                                id="previous_school_details" class="input-control-input"
                                                 placeholder='{{ field_label($fields, 'previous_school_details') }}'
                                                 value="{{ old('previous_school_details') }}">
                                         </div>
@@ -767,17 +783,17 @@ $setting = generalSetting();
                                                 value="{{ old('additional_notes') }}">
                                         </div>
                                     @endif
-                                    
+
                                 </div>
                                 @if (in_array('ifsc_code', $active_fields))
-                                        <div class="input-control">
-                                            <label for="ifsc_code"
-                                                class="input-control-label">{{ field_label($fields, 'ifsc_code') }}</label>
-                                            <input type="text" name='ifsc_code' id="ifsc_code"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'ifsc_code') }}'
-                                                value="{{ old('ifsc_code') }}">
-                                        </div>
+                                    <div class="input-control">
+                                        <label for="ifsc_code"
+                                            class="input-control-label">{{ field_label($fields, 'ifsc_code') }}</label>
+                                        <input type="text" name='ifsc_code' id="ifsc_code"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'ifsc_code') }}'
+                                            value="{{ old('ifsc_code') }}">
+                                    </div>
                                 @endif
 
                                 @if (in_array('document_file_1', $active_fields))
@@ -839,7 +855,9 @@ $setting = generalSetting();
                                     </div>
                                 @endif
                                 @if ($custom_fields)
-                                    @include('parentregistration::_custom_field')
+                                    <div class="row d-flex">
+                                        @include('parentregistration::_custom_field')
+                                    </div>
                                 @endif
                                 @if ($captcha)
                                     <div class="col-lg-12 text-center">
@@ -915,6 +933,45 @@ $setting = generalSetting();
                 document.getElementById('placeholderInput').placeholder = fileName;
             }
         }
+        $(document).ready(function() {
+            $('#select-shift').change(function() {
+                var shiftId = $(this).val();
+                if (shiftId) {
+                    $.ajax({
+                        url: '/ajax-parent-registration-get-classes',
+                        type: 'GET',
+                        data: {
+                            shift_id: shiftId
+                        },
+                        success: function(response) {
+                            $('#select-class').empty();
+                            $('#class-div ul').empty();
+                            $('#select-class').append('<option value="">Select Class</option>');
+                            $.each(response.classes, function(id, className) {
+                                $("#select-class").append(
+                                    $("<option>", {
+                                        value: id,
+                                        text: className,
+                                    })
+                                );
+
+                                $("#class-div ul").append(
+                                    "<li data-value='" +
+                                    id +
+                                    "' class='option'>" +
+                                    className +
+                                    "</li>"
+                                );
+                            });
+                        },
+                        error: function(xhr) {
+                            console.log(xhr.responseText);
+                        }
+                    });
+                }
+            });
+        });
+
         function getAge(dob) {
             return ~~((new Date() - new Date(dob)) / 31556952000);
         }
