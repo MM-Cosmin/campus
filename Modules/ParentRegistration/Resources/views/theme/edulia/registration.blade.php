@@ -86,7 +86,7 @@ $setting = generalSetting();
                 </div>
             @else
                 <div class="row">
-                    <div class="col-xl-6 offset-xl-3 col-md-10 offset-md-1 col-sm-12" id='page-width-clearfix'>
+                    <div>
                         <div class="reg_wrapper">
                             @if ($reg_setting->registration_permission == 1)
                                 <form method="POST" class=""
@@ -430,472 +430,466 @@ $setting = generalSetting();
                             {{-- Student Details Ends --}}
 
                             {{-- Guardian Details Starts --}}
-                            <div class="reg_wrapper_item">
+                            <div class="reg_wrapper_item"
+                                style="display: none;>
                                 <h4><span>3</span> Guardian Details</h4>
                                 <div class="reg_wrapper_item_flex">
-                                    @if (in_array('fathers_name', $active_fields))
-                                        <div class="input-control">
-                                            <label for="fathers_name"
-                                                class="input-control-label">{{ field_label($fields, 'fathers_name') }}</label>
-                                            <input type="text" name='fathers_name' id="fathers_name"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'fathers_name') }}'
-                                                value="{{ old('fathers_name') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('fathers_occupation', $active_fields))
-                                        <div class="input-control">
-                                            <label for="fathers_occupation"
-                                                class="input-control-label">{{ field_label($fields, 'fathers_occupation') }}</label>
-                                            <input type="text" name='fathers_occupation' id="fathers_occupation"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'fathers_occupation') }}'
-                                                value="{{ old('fathers_occupation') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('fathers_phone', $active_fields))
-                                        <div class="input-control">
-                                            <label for="fathers_phone"
-                                                class="input-control-label">{{ field_label($fields, 'fathers_phone') }}</label>
-                                            <input type="text" name='fathers_phone' id="fathers_phone"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'fathers_phone') }}'
-                                                value="{{ old('fathers_phone') }}">
-                                        </div>
-                                    @endif
-
-                                    @if (in_array('fathers_photo', $active_fields))
-                                        <div class="position-relative input-control file_uploader">
-                                            <label for="#"
-                                                class="input-control-label">{{ field_label($fields, 'fathers_photo') }}</label>
-                                            <input class="input-control-input" id="placeholderFathersName"
-                                                type="text"
-                                                placeholder="{{ field_label($fields, 'fathers_photo') }}" readonly>
-                                            <button class="" type="button">
-                                                <label class="primary-btn small fix-gr-bg"
-                                                    for="fathers_photo">@lang('common.browse')</label>
-                                                <input type="file" class="d-none" name="fathers_photo"
-                                                    value="{{ old('fathers_photo') }}" id="fathers_photo">
-                                            </button>
-                                        </div>
-                                    @endif
-                                </div>
-                                <div class="reg_wrapper_item_flex">
-                                    @if (in_array('mothers_name', $active_fields))
-                                        <div class="input-control">
-                                            <label for="mothers_name"
-                                                class="input-control-label">{{ field_label($fields, 'mothers_name') }}</label>
-                                            <input type="text" name='mothers_name' id="mothers_name"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'mothers_name') }}'
-                                                value="{{ old('mothers_name') }}">
-                                        </div>
-                                    @endif
-
-                                    @if (in_array('mothers_occupation', $active_fields))
-                                        <div class="input-control">
-                                            <label for="mothers_occupation"
-                                                class="input-control-label">{{ field_label($fields, 'mothers_occupation') }}</label>
-                                            <input type="text" name='mothers_occupation' id="mothers_occupation"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'mothers_occupation') }}'
-                                                value="{{ old('mothers_occupation') }}">
-                                        </div>
-                                    @endif
-
-                                    @if (in_array('mothers_phone', $active_fields))
-                                        <div class="input-control">
-                                            <label for="mothers_phone"
-                                                class="input-control-label">{{ field_label($fields, 'mothers_phone') }}</label>
-                                            <input type="text" name='mothers_phone' id="mothers_phone"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'mothers_phone') }}'
-                                                value="{{ old('mothers_phone') }}">
-                                        </div>
-                                    @endif
-
-                                    @if (in_array('mothers_photo', $active_fields))
-                                        <div class="position-relative input-control file_uploader">
-                                            <label for="#"
-                                                class="input-control-label">{{ field_label($fields, 'mothers_photo') }}</label>
-                                            <input class="input-control-input" id="placeholderMothersName"
-                                                type="text"
-                                                placeholder="{{ field_label($fields, 'mothers_photo') }}" readonly>
-                                            <button class="" type="button">
-                                                <label class="primary-btn small fix-gr-bg"
-                                                    for="mothers_photo">@lang('common.browse')</label>
-                                                <input type="file" class="d-none" name="mothers_photo"
-                                                    value="{{ old('mothers_photo') }}" id="mothers_photo">
-                                            </button>
-                                        </div>
-                                    @endif
-                                </div>
-
-                                @if (in_array('relation', $active_fields))
-                                    <div class="input-control select-guardian">
-                                        <span>{{ field_label($fields, 'relation') }}:</span>
-                                        <label for="relationFather" class="page_radio">
-                                            <input class="relationButton" type="radio" value="F"
-                                                name='relationButton' id="relationFather"
-                                                {{ old('relationButton', 'F') == 'F' ? 'checked' : '' }}>
-                                            <span class="page_radio_title">@lang('student.father')</span>
-                                        </label>
-                                        <label for="relationMother" class="page_radio">
-                                            <input class="relationButton" type="radio" value="M"
-                                                name='relationButton' id="relationMother"
-                                                {{ old('relationButton', 'M') == 'M' ? 'checked' : '' }}>
-                                            <span class="page_radio_title">@lang('student.mother')</span>
-                                        </label>
-                                        <label for="relationOther" class="page_radio">
-                                            <input class="relationButton" type="radio" value="O"
-                                                name='relationButton' id="relationOther"
-                                                {{ old('relationButton', 'O') == 'O' ? 'checked' : '' }}>
-                                            <span class="page_radio_title">@lang('student.Other')</span>
-                                        </label>
-                                    </div>
-                                @endif
-                                <div class="reg_wrapper_item_flex">
-                                    @if (in_array('guardians_name', $active_fields))
-                                        <div class="input-control">
-                                            <label for="guardians_name"
-                                                class="input-control-label">{{ field_label($fields, 'guardians_name') }}
-                                            </label>
-                                            <input type="text" name='guardian_name' id="guardians_name"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'guardians_name') }}'
-                                                value="{{ old('guardian_name') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('guardians_email', $active_fields))
-                                        <div class="input-control">
-                                            <label for="guardians_email"
-                                                class="input-control-label">{{ field_label($fields, 'guardians_email') }}
-                                                <span>*</span></label>
-                                            <input type="text" name='guardian_email' id="guardians_email"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'guardians_email') }}'
-                                                value="{{ old('guardian_email') }}">
-                                            @if ($errors->has('guardian_email'))
-                                                <span
-                                                    class="text-danger">{{ @$errors->first('guardian_email') }}</span>
-                                            @endif
-                                        </div>
-                                    @endif
-                                    @if (in_array('guardians_phone', $active_fields))
-                                        <div class="input-control">
-                                            <label for="guardians_phone"
-                                                class="input-control-label">{{ field_label($fields, 'guardians_phone') }}
-                                            </label>
-                                            <input type="text" name='guardian_mobile' id="guardians_phone"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'guardians_phone') }}'
-                                                value="{{ old('guardian_mobile') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('guardians_occupation', $active_fields))
-                                        <div class="input-control">
-                                            <label for="guardians_occupation"
-                                                class="input-control-label">{{ field_label($fields, 'guardians_occupation') }}
-                                            </label>
-                                            <input type="text" name='guardians_occupation'
-                                                id="guardians_occupation" class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'guardians_occupation') }}'
-                                                value="{{ old('guardians_occupation') }}">
-                                        </div>
-                                    @endif
-                                </div>
-                                @if (in_array('guardians_photo', $active_fields))
-                                    <div class="position-relative input-control file_uploader">
-                                        <label for="#"
-                                            class="input-control-label">{{ field_label($fields, 'guardians_photo') }}</label>
-                                        <input class="input-control-input" id="placeholderGuardiansName"
-                                            type="text"
-                                            placeholder="{{ field_label($fields, 'guardians_photo') }}" readonly>
-                                        <button class="" type="button">
-                                            <label class="primary-btn small fix-gr-bg"
-                                                for="guardians_photo">@lang('common.browse')</label>
-                                            <input type="file" name="guardians_photo"
-                                                value="{{ old('guardians_photo') }}" id="guardians_photo">
-                                        </button>
-                                    </div>
-                                @endif
-                                <div class="reg_wrapper_item_flex">
-                                    @if (in_array('guardians_address', $active_fields))
-                                        <div class="input-control">
-                                            <label for="guardians_address"
-                                                class="input-control-label">{{ field_label($fields, 'guardians_address') }}</label>
-                                            <input type="text" name='guardians_address' id="guardians_address"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'guardians_address') }}'
-                                                value="{{ old('guardians_address') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('current_address', $active_fields))
-                                        <div class="input-control">
-                                            <label for="current_address"
-                                                class="input-control-label">{{ field_label($fields, 'current_address') }}</label>
-                                            <input type="text" name='current_address' id="current_address"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'current_address') }}'
-                                                value="{{ old('current_address') }}">
-                                        </div>
-                                    @endif
-
-                                </div>
-
-                                @if (in_array('permanent_address', $active_fields))
+                                @if (in_array('fathers_name', $active_fields))
                                     <div class="input-control">
-                                        <label for="permanent_address"
-                                            class="input-control-label">{{ field_label($fields, 'permanent_address') }}</label>
-                                        <input type="text" name='permanent_address' id="permanent_address"
+                                        <label for="fathers_name"
+                                            class="input-control-label">{{ field_label($fields, 'fathers_name') }}</label>
+                                        <input type="text" name='fathers_name' id="fathers_name"
                                             class="input-control-input"
-                                            placeholder='{{ field_label($fields, 'permanent_address') }}'
-                                            value="{{ old('permanent_address') }}">
+                                            placeholder='{{ field_label($fields, 'fathers_name') }}'
+                                            value="{{ old('fathers_name') }}">
                                     </div>
                                 @endif
-
-                                <div class="input-control">
-                                    <label for="how_do_know_us"
-                                        class="input-control-label">{{ __('parentregistration::parentRegistration.how_do_you_know_us') }}?</label>
-                                    <textarea class="input-control-input" name="how_do_know_us" id="how_do_know_us" rows="1"
-                                        placeholder="{{ __('parentregistration::parentRegistration.how_do_you_know_us') }}?"></textarea>
-                                </div>
-                            </div>
-                            {{-- Guardian Details Ends --}}
-
-                            {{-- Other Details Starts --}}
-                            <div class="reg_wrapper_item">
-                                <h4><span>4</span> Miscellaneous Details</h4>
-                                <div class="reg_wrapper_item_flex">
-                                    @if (in_array('route', $active_fields))
-                                        <div class="input-control">
-                                            <label for="route"
-                                                class="input-control-label">{{ field_label($fields, 'route') }}</label>
-                                            <select name="route" id="route" class="input-control-input">
-                                                <option data-display="{{ field_label($fields, 'route') }} "
-                                                    value="">{{ field_label($fields, 'route') }}
-                                                </option>
-                                                @foreach ($route_lists as $route_list)
-                                                    <option value="{{ $route_list->id }}"
-                                                        {{ old('route_list') == $route_list->id ? 'selected' : '' }}>
-                                                        {{ $route_list->title }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    @endif
-                                    @if (in_array('vehicle', $active_fields))
-                                        <div class="input-control" id="select_vehicle_div">
-                                            <label for="vehicle"
-                                                class="input-control-label">{{ field_label($fields, 'vehicle') }}</label>
-                                            <select name="vehicle" id="selectVehicle" class="input-control-input">
-                                                <option data-display="{{ field_label($fields, 'vehicle') }} "
-                                                    value="">{{ field_label($fields, 'vehicle') }}
-                                                </option>
-                                            </select>
-                                        </div>
-                                    @endif
-                                    @if (in_array('dormitory_name', $active_fields))
-                                        <div class="input-control">
-                                            <label for="dormitory_name"
-                                                class="input-control-label">{{ field_label($fields, 'dormitory_name') }}</label>
-                                            <select name="dormitory_name" id="SelectDormitory"
-                                                class="input-control-input">
-                                                <option data-display="{{ field_label($fields, 'dormitory_name') }} "
-                                                    value="">{{ field_label($fields, 'dormitory_name') }}
-                                                </option>
-                                                @foreach ($dormitory_lists as $dormitory_list)
-                                                    <option value="{{ $dormitory_list->id }}"
-                                                        {{ old('dormitory_name') == $dormitory_list->id ? 'selected' : '' }}>
-                                                        {{ $dormitory_list->dormitory_name }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                    @endif
-                                    @if (in_array('room_number', $active_fields))
-                                        <div class="input-control" id="roomNumberDiv">
-                                            <label for="room_number"
-                                                class="input-control-label">{{ field_label($fields, 'room_number') }}</label>
-                                            <select name="room_number" id="selectRoomNumber"
-                                                class="input-control-input">
-                                                <option data-display="{{ field_label($fields, 'room_number') }} "
-                                                    value="">{{ field_label($fields, 'room_number') }}
-                                                </option>
-                                            </select>
-                                        </div>
-                                    @endif
-                                    @if (in_array('national_id_number', $active_fields))
-                                        <div class="input-control">
-                                            <label for="national_id_number"
-                                                class="input-control-label">{{ field_label($fields, 'national_id_number') }}</label>
-                                            <input type="text" name='national_id_number' id="national_id_number"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'national_id_number') }}'
-                                                value="{{ old('national_id_number') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('local_id_number', $active_fields))
-                                        <div class="input-control">
-                                            <label for="local_id_number"
-                                                class="input-control-label">{{ field_label($fields, 'local_id_number') }}</label>
-                                            <input type="text" name='local_id_number' id="local_id_number"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'local_id_number') }}'
-                                                value="{{ old('local_id_number') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('bank_account_number', $active_fields))
-                                        <div class="input-control">
-                                            <label for="bank_account_number"
-                                                class="input-control-label">{{ field_label($fields, 'bank_account_number') }}</label>
-                                            <input type="text" name='bank_account_number' id="bank_account_number"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'bank_account_number') }}'
-                                                value="{{ old('bank_account_number') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('bank_name', $active_fields))
-                                        <div class="input-control">
-                                            <label for="bank_name"
-                                                class="input-control-label">{{ field_label($fields, 'bank_name') }}</label>
-                                            <input type="text" name='bank_name' id="bank_name"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'bank_name') }}'
-                                                value="{{ old('bank_name') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('previous_school_details', $active_fields))
-                                        <div class="input-control">
-                                            <label for="previous_school_details"
-                                                class="input-control-label">{{ field_label($fields, 'previous_school_details') }}</label>
-                                            <input type="text" name='previous_school_details'
-                                                id="previous_school_details" class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'previous_school_details') }}'
-                                                value="{{ old('previous_school_details') }}">
-                                        </div>
-                                    @endif
-                                    @if (in_array('additional_notes', $active_fields))
-                                        <div class="input-control">
-                                            <label for="additional_notes"
-                                                class="input-control-label">{{ field_label($fields, 'additional_notes') }}</label>
-                                            <input type="text" name='additional_notes' id="additional_notes"
-                                                class="input-control-input"
-                                                placeholder='{{ field_label($fields, 'additional_notes') }}'
-                                                value="{{ old('additional_notes') }}">
-                                        </div>
-                                    @endif
-
-                                </div>
-                                @if (in_array('ifsc_code', $active_fields))
+                                @if (in_array('fathers_occupation', $active_fields))
                                     <div class="input-control">
-                                        <label for="ifsc_code"
-                                            class="input-control-label">{{ field_label($fields, 'ifsc_code') }}</label>
-                                        <input type="text" name='ifsc_code' id="ifsc_code"
+                                        <label for="fathers_occupation"
+                                            class="input-control-label">{{ field_label($fields, 'fathers_occupation') }}</label>
+                                        <input type="text" name='fathers_occupation' id="fathers_occupation"
                                             class="input-control-input"
-                                            placeholder='{{ field_label($fields, 'ifsc_code') }}'
-                                            value="{{ old('ifsc_code') }}">
+                                            placeholder='{{ field_label($fields, 'fathers_occupation') }}'
+                                            value="{{ old('fathers_occupation') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('fathers_phone', $active_fields))
+                                    <div class="input-control">
+                                        <label for="fathers_phone"
+                                            class="input-control-label">{{ field_label($fields, 'fathers_phone') }}</label>
+                                        <input type="text" name='fathers_phone' id="fathers_phone"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'fathers_phone') }}'
+                                            value="{{ old('fathers_phone') }}">
                                     </div>
                                 @endif
 
-                                @if (in_array('document_file_1', $active_fields))
+                                @if (in_array('fathers_photo', $active_fields))
                                     <div class="position-relative input-control file_uploader">
                                         <label for="#"
-                                            class="input-control-label">{{ field_label($fields, 'document_file_1') }}</label>
-                                        <input class="input-control-input" id="placeholderFileOneName" type="text"
-                                            placeholder="{{ field_label($fields, 'document_file_1') }}" readonly>
+                                            class="input-control-label">{{ field_label($fields, 'fathers_photo') }}</label>
+                                        <input class="input-control-input" id="placeholderFathersName" type="text"
+                                            placeholder="{{ field_label($fields, 'fathers_photo') }}" readonly>
                                         <button class="" type="button">
                                             <label class="primary-btn small fix-gr-bg"
-                                                for="document_file_1">@lang('common.browse')</label>
-                                            <input type="file" class="d-none" name="document_file_1"
-                                                value="{{ old('document_file_1') }}" id="document_file_1">
+                                                for="fathers_photo">@lang('common.browse')</label>
+                                            <input type="file" class="d-none" name="fathers_photo"
+                                                value="{{ old('fathers_photo') }}" id="fathers_photo">
                                         </button>
-                                    </div>
-                                @endif
-                                @if (in_array('document_file_2', $active_fields))
-                                    <div class="position-relative input-control file_uploader">
-                                        <label for="#"
-                                            class="input-control-label">{{ field_label($fields, 'document_file_2') }}</label>
-                                        <input class="input-control-input" id="placeholderFileTwoName" type="text"
-                                            placeholder="{{ field_label($fields, 'document_file_2') }}" readonly>
-                                        <button class="" type="button">
-                                            <label class="primary-btn small fix-gr-bg"
-                                                for="document_file_2">@lang('common.browse')</label>
-                                            <input type="file" class="d-none" name="document_file_2"
-                                                value="{{ old('document_file_2') }}" id="document_file_2">
-                                        </button>
-                                    </div>
-                                @endif
-                                @if (in_array('document_file_3', $active_fields))
-                                    <div class="position-relative input-control file_uploader">
-                                        <label for="#"
-                                            class="input-control-label">{{ field_label($fields, 'document_file_3') }}</label>
-                                        <input class="input-control-input" id="placeholderFileThreeName"
-                                            type="text"
-                                            placeholder="{{ field_label($fields, 'document_file_3') }}" readonly>
-                                        <button class="" type="button">
-                                            <label class="primary-btn small fix-gr-bg"
-                                                for="document_file_3">@lang('common.browse')</label>
-                                            <input type="file" class="d-none" name="document_file_3"
-                                                value="{{ old('document_file_3') }}" id="document_file_3">
-                                        </button>
-                                    </div>
-                                @endif
-                                @if (in_array('document_file_4', $active_fields))
-                                    <div class="position-relative input-control file_uploader">
-                                        <label for="#"
-                                            class="input-control-label">{{ field_label($fields, 'document_file_4') }}</label>
-                                        <input class="input-control-input" id="placeholderFileFourName"
-                                            type="text"
-                                            placeholder="{{ field_label($fields, 'document_file_4') }}" readonly>
-                                        <button class="" type="button">
-                                            <label class="primary-btn small fix-gr-bg"
-                                                for="document_file_4">@lang('common.browse')</label>
-                                            <input type="file" class="d-none" name="document_file_4"
-                                                value="{{ old('document_file_4') }}" id="document_file_4">
-                                        </button>
-                                    </div>
-                                @endif
-                                @if ($custom_fields)
-                                    <div class="row d-flex">
-                                        @include('parentregistration::_custom_field')
-                                    </div>
-                                @endif
-                                @if ($captcha)
-                                    <div class="col-lg-12 text-center">
-                                        {!! $captcha->renderJs() !!}
-                                        {!! $captcha->display() !!}
-                                        <span class="text-danger"
-                                            id="g-recaptcha-error">{{ $errors->first('g-recaptcha-response') }}</span>
-                                    </div>
-                                @endif
-                                @php
-                                    $tooltip = '';
-                                    if ($reg_setting->registration_permission == 1) {
-                                        $tooltip = '';
-                                    } else {
-                                        $tooltip = "You Can't Registration Now";
-                                    }
-                                @endphp
-                                <div class="input-control">
-                                    <button type="submit" class='input-control-input'
-                                        id="onlineRegistrationSubmitButton" data-toggle="tooltip"
-                                        title="{{ @$tooltip }}">@lang('edulia.register_now')</button>
-                                </div>
-                                @if ($reg_setting->footer_note_status == 1)
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="mt-30">
-                                                {{ $reg_setting->footer_note_text }}
-                                            </div>
-                                        </div>
                                     </div>
                                 @endif
                             </div>
-                            {{-- Other Details Ends --}}
-                            </form>
+                            <div class="reg_wrapper_item_flex">
+                                @if (in_array('mothers_name', $active_fields))
+                                    <div class="input-control">
+                                        <label for="mothers_name"
+                                            class="input-control-label">{{ field_label($fields, 'mothers_name') }}</label>
+                                        <input type="text" name='mothers_name' id="mothers_name"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'mothers_name') }}'
+                                            value="{{ old('mothers_name') }}">
+                                    </div>
+                                @endif
+
+                                @if (in_array('mothers_occupation', $active_fields))
+                                    <div class="input-control">
+                                        <label for="mothers_occupation"
+                                            class="input-control-label">{{ field_label($fields, 'mothers_occupation') }}</label>
+                                        <input type="text" name='mothers_occupation' id="mothers_occupation"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'mothers_occupation') }}'
+                                            value="{{ old('mothers_occupation') }}">
+                                    </div>
+                                @endif
+
+                                @if (in_array('mothers_phone', $active_fields))
+                                    <div class="input-control">
+                                        <label for="mothers_phone"
+                                            class="input-control-label">{{ field_label($fields, 'mothers_phone') }}</label>
+                                        <input type="text" name='mothers_phone' id="mothers_phone"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'mothers_phone') }}'
+                                            value="{{ old('mothers_phone') }}">
+                                    </div>
+                                @endif
+
+                                @if (in_array('mothers_photo', $active_fields))
+                                    <div class="position-relative input-control file_uploader">
+                                        <label for="#"
+                                            class="input-control-label">{{ field_label($fields, 'mothers_photo') }}</label>
+                                        <input class="input-control-input" id="placeholderMothersName" type="text"
+                                            placeholder="{{ field_label($fields, 'mothers_photo') }}" readonly>
+                                        <button class="" type="button">
+                                            <label class="primary-btn small fix-gr-bg"
+                                                for="mothers_photo">@lang('common.browse')</label>
+                                            <input type="file" class="d-none" name="mothers_photo"
+                                                value="{{ old('mothers_photo') }}" id="mothers_photo">
+                                        </button>
+                                    </div>
+                                @endif
+                            </div>
+
+                            @if (in_array('relation', $active_fields))
+                                <div class="input-control select-guardian">
+                                    <span>{{ field_label($fields, 'relation') }}:</span>
+                                    <label for="relationFather" class="page_radio">
+                                        <input class="relationButton" type="radio" value="F"
+                                            name='relationButton' id="relationFather"
+                                            {{ old('relationButton', 'F') == 'F' ? 'checked' : '' }}>
+                                        <span class="page_radio_title">@lang('student.father')</span>
+                                    </label>
+                                    <label for="relationMother" class="page_radio">
+                                        <input class="relationButton" type="radio" value="M"
+                                            name='relationButton' id="relationMother"
+                                            {{ old('relationButton', 'M') == 'M' ? 'checked' : '' }}>
+                                        <span class="page_radio_title">@lang('student.mother')</span>
+                                    </label>
+                                    <label for="relationOther" class="page_radio">
+                                        <input class="relationButton" type="radio" value="O"
+                                            name='relationButton' id="relationOther"
+                                            {{ old('relationButton', 'O') == 'O' ? 'checked' : '' }}>
+                                        <span class="page_radio_title">@lang('student.Other')</span>
+                                    </label>
+                                </div>
+                            @endif
+                            <div class="reg_wrapper_item_flex">
+                                @if (in_array('guardians_name', $active_fields))
+                                    <div class="input-control">
+                                        <label for="guardians_name"
+                                            class="input-control-label">{{ field_label($fields, 'guardians_name') }}
+                                        </label>
+                                        <input type="text" name='guardian_name' id="guardians_name"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'guardians_name') }}'
+                                            value="{{ old('guardian_name') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('guardians_email', $active_fields))
+                                    <div class="input-control">
+                                        <label for="guardians_email"
+                                            class="input-control-label">{{ field_label($fields, 'guardians_email') }}
+                                            <span>*</span></label>
+                                        <input type="text" name='guardian_email' id="guardians_email"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'guardians_email') }}'
+                                            value="info@guardian.com}">
+                                        @if ($errors->has('guardian_email'))
+                                            <span class="text-danger">{{ @$errors->first('guardian_email') }}</span>
+                                        @endif
+                                    </div>
+                                @endif
+                                @if (in_array('guardians_phone', $active_fields))
+                                    <div class="input-control">
+                                        <label for="guardians_phone"
+                                            class="input-control-label">{{ field_label($fields, 'guardians_phone') }}
+                                        </label>
+                                        <input type="text" name='guardian_mobile' id="guardians_phone"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'guardians_phone') }}'
+                                            value="{{ old('guardian_mobile') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('guardians_occupation', $active_fields))
+                                    <div class="input-control">
+                                        <label for="guardians_occupation"
+                                            class="input-control-label">{{ field_label($fields, 'guardians_occupation') }}
+                                        </label>
+                                        <input type="text" name='guardians_occupation' id="guardians_occupation"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'guardians_occupation') }}'
+                                            value="{{ old('guardians_occupation') }}">
+                                    </div>
+                                @endif
+                            </div>
+                            @if (in_array('guardians_photo', $active_fields))
+                                <div class="position-relative input-control file_uploader">
+                                    <label for="#"
+                                        class="input-control-label">{{ field_label($fields, 'guardians_photo') }}</label>
+                                    <input class="input-control-input" id="placeholderGuardiansName" type="text"
+                                        placeholder="{{ field_label($fields, 'guardians_photo') }}" readonly>
+                                    <button class="" type="button">
+                                        <label class="primary-btn small fix-gr-bg"
+                                            for="guardians_photo">@lang('common.browse')</label>
+                                        <input type="file" name="guardians_photo"
+                                            value="{{ old('guardians_photo') }}" id="guardians_photo">
+                                    </button>
+                                </div>
+                            @endif
+                            <div class="reg_wrapper_item_flex">
+                                @if (in_array('guardians_address', $active_fields))
+                                    <div class="input-control">
+                                        <label for="guardians_address"
+                                            class="input-control-label">{{ field_label($fields, 'guardians_address') }}</label>
+                                        <input type="text" name='guardians_address' id="guardians_address"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'guardians_address') }}'
+                                            value="{{ old('guardians_address') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('current_address', $active_fields))
+                                    <div class="input-control">
+                                        <label for="current_address"
+                                            class="input-control-label">{{ field_label($fields, 'current_address') }}</label>
+                                        <input type="text" name='current_address' id="current_address"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'current_address') }}'
+                                            value="{{ old('current_address') }}">
+                                    </div>
+                                @endif
+
+                            </div>
+
+                            @if (in_array('permanent_address', $active_fields))
+                                <div class="input-control">
+                                    <label for="permanent_address"
+                                        class="input-control-label">{{ field_label($fields, 'permanent_address') }}</label>
+                                    <input type="text" name='permanent_address' id="permanent_address"
+                                        class="input-control-input"
+                                        placeholder='{{ field_label($fields, 'permanent_address') }}'
+                                        value="{{ old('permanent_address') }}">
+                                </div>
+                            @endif
+
+                            <div class="input-control">
+                                <label for="how_do_know_us"
+                                    class="input-control-label">{{ __('parentregistration::parentRegistration.how_do_you_know_us') }}?</label>
+                                <textarea class="input-control-input" name="how_do_know_us" id="how_do_know_us" rows="1"
+                                    placeholder="{{ __('parentregistration::parentRegistration.how_do_you_know_us') }}?"></textarea>
+                            </div>
                         </div>
+                        {{-- Guardian Details Ends --}}
+
+                        {{-- Other Details Starts --}}
+                        <div class="reg_wrapper_item" style="display: none;">
+                            <h4><span>4</span> Miscellaneous Details</h4>
+                            <div class="reg_wrapper_item_flex">
+                                @if (in_array('route', $active_fields))
+                                    <div class="input-control">
+                                        <label for="route"
+                                            class="input-control-label">{{ field_label($fields, 'route') }}</label>
+                                        <select name="route" id="route" class="input-control-input">
+                                            <option data-display="{{ field_label($fields, 'route') }} "
+                                                value="">{{ field_label($fields, 'route') }}
+                                            </option>
+                                            @foreach ($route_lists as $route_list)
+                                                <option value="{{ $route_list->id }}"
+                                                    {{ old('route_list') == $route_list->id ? 'selected' : '' }}>
+                                                    {{ $route_list->title }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                @endif
+                                @if (in_array('vehicle', $active_fields))
+                                    <div class="input-control" id="select_vehicle_div">
+                                        <label for="vehicle"
+                                            class="input-control-label">{{ field_label($fields, 'vehicle') }}</label>
+                                        <select name="vehicle" id="selectVehicle" class="input-control-input">
+                                            <option data-display="{{ field_label($fields, 'vehicle') }} "
+                                                value="">{{ field_label($fields, 'vehicle') }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                @endif
+                                @if (in_array('dormitory_name', $active_fields))
+                                    <div class="input-control">
+                                        <label for="dormitory_name"
+                                            class="input-control-label">{{ field_label($fields, 'dormitory_name') }}</label>
+                                        <select name="dormitory_name" id="SelectDormitory"
+                                            class="input-control-input">
+                                            <option data-display="{{ field_label($fields, 'dormitory_name') }} "
+                                                value="">{{ field_label($fields, 'dormitory_name') }}
+                                            </option>
+                                            @foreach ($dormitory_lists as $dormitory_list)
+                                                <option value="{{ $dormitory_list->id }}"
+                                                    {{ old('dormitory_name') == $dormitory_list->id ? 'selected' : '' }}>
+                                                    {{ $dormitory_list->dormitory_name }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                @endif
+                                @if (in_array('room_number', $active_fields))
+                                    <div class="input-control" id="roomNumberDiv">
+                                        <label for="room_number"
+                                            class="input-control-label">{{ field_label($fields, 'room_number') }}</label>
+                                        <select name="room_number" id="selectRoomNumber" class="input-control-input">
+                                            <option data-display="{{ field_label($fields, 'room_number') }} "
+                                                value="">{{ field_label($fields, 'room_number') }}
+                                            </option>
+                                        </select>
+                                    </div>
+                                @endif
+                                @if (in_array('national_id_number', $active_fields))
+                                    <div class="input-control">
+                                        <label for="national_id_number"
+                                            class="input-control-label">{{ field_label($fields, 'national_id_number') }}</label>
+                                        <input type="text" name='national_id_number' id="national_id_number"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'national_id_number') }}'
+                                            value="{{ old('national_id_number') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('local_id_number', $active_fields))
+                                    <div class="input-control">
+                                        <label for="local_id_number"
+                                            class="input-control-label">{{ field_label($fields, 'local_id_number') }}</label>
+                                        <input type="text" name='local_id_number' id="local_id_number"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'local_id_number') }}'
+                                            value="{{ old('local_id_number') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('bank_account_number', $active_fields))
+                                    <div class="input-control">
+                                        <label for="bank_account_number"
+                                            class="input-control-label">{{ field_label($fields, 'bank_account_number') }}</label>
+                                        <input type="text" name='bank_account_number' id="bank_account_number"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'bank_account_number') }}'
+                                            value="{{ old('bank_account_number') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('bank_name', $active_fields))
+                                    <div class="input-control">
+                                        <label for="bank_name"
+                                            class="input-control-label">{{ field_label($fields, 'bank_name') }}</label>
+                                        <input type="text" name='bank_name' id="bank_name"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'bank_name') }}'
+                                            value="{{ old('bank_name') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('previous_school_details', $active_fields))
+                                    <div class="input-control">
+                                        <label for="previous_school_details"
+                                            class="input-control-label">{{ field_label($fields, 'previous_school_details') }}</label>
+                                        <input type="text" name='previous_school_details'
+                                            id="previous_school_details" class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'previous_school_details') }}'
+                                            value="{{ old('previous_school_details') }}">
+                                    </div>
+                                @endif
+                                @if (in_array('additional_notes', $active_fields))
+                                    <div class="input-control">
+                                        <label for="additional_notes"
+                                            class="input-control-label">{{ field_label($fields, 'additional_notes') }}</label>
+                                        <input type="text" name='additional_notes' id="additional_notes"
+                                            class="input-control-input"
+                                            placeholder='{{ field_label($fields, 'additional_notes') }}'
+                                            value="{{ old('additional_notes') }}">
+                                    </div>
+                                @endif
+
+                            </div>
+                            @if (in_array('ifsc_code', $active_fields))
+                                <div class="input-control">
+                                    <label for="ifsc_code"
+                                        class="input-control-label">{{ field_label($fields, 'ifsc_code') }}</label>
+                                    <input type="text" name='ifsc_code' id="ifsc_code"
+                                        class="input-control-input"
+                                        placeholder='{{ field_label($fields, 'ifsc_code') }}'
+                                        value="{{ old('ifsc_code') }}">
+                                </div>
+                            @endif
+
+                            @if (in_array('document_file_1', $active_fields))
+                                <div class="position-relative input-control file_uploader">
+                                    <label for="#"
+                                        class="input-control-label">{{ field_label($fields, 'document_file_1') }}</label>
+                                    <input class="input-control-input" id="placeholderFileOneName" type="text"
+                                        placeholder="{{ field_label($fields, 'document_file_1') }}" readonly>
+                                    <button class="" type="button">
+                                        <label class="primary-btn small fix-gr-bg"
+                                            for="document_file_1">@lang('common.browse')</label>
+                                        <input type="file" class="d-none" name="document_file_1"
+                                            value="{{ old('document_file_1') }}" id="document_file_1">
+                                    </button>
+                                </div>
+                            @endif
+                            @if (in_array('document_file_2', $active_fields))
+                                <div class="position-relative input-control file_uploader">
+                                    <label for="#"
+                                        class="input-control-label">{{ field_label($fields, 'document_file_2') }}</label>
+                                    <input class="input-control-input" id="placeholderFileTwoName" type="text"
+                                        placeholder="{{ field_label($fields, 'document_file_2') }}" readonly>
+                                    <button class="" type="button">
+                                        <label class="primary-btn small fix-gr-bg"
+                                            for="document_file_2">@lang('common.browse')</label>
+                                        <input type="file" class="d-none" name="document_file_2"
+                                            value="{{ old('document_file_2') }}" id="document_file_2">
+                                    </button>
+                                </div>
+                            @endif
+                            @if (in_array('document_file_3', $active_fields))
+                                <div class="position-relative input-control file_uploader">
+                                    <label for="#"
+                                        class="input-control-label">{{ field_label($fields, 'document_file_3') }}</label>
+                                    <input class="input-control-input" id="placeholderFileThreeName" type="text"
+                                        placeholder="{{ field_label($fields, 'document_file_3') }}" readonly>
+                                    <button class="" type="button">
+                                        <label class="primary-btn small fix-gr-bg"
+                                            for="document_file_3">@lang('common.browse')</label>
+                                        <input type="file" class="d-none" name="document_file_3"
+                                            value="{{ old('document_file_3') }}" id="document_file_3">
+                                    </button>
+                                </div>
+                            @endif
+                            @if (in_array('document_file_4', $active_fields))
+                                <div class="position-relative input-control file_uploader">
+                                    <label for="#"
+                                        class="input-control-label">{{ field_label($fields, 'document_file_4') }}</label>
+                                    <input class="input-control-input" id="placeholderFileFourName" type="text"
+                                        placeholder="{{ field_label($fields, 'document_file_4') }}" readonly>
+                                    <button class="" type="button">
+                                        <label class="primary-btn small fix-gr-bg"
+                                            for="document_file_4">@lang('common.browse')</label>
+                                        <input type="file" class="d-none" name="document_file_4"
+                                            value="{{ old('document_file_4') }}" id="document_file_4">
+                                    </button>
+                                </div>
+                            @endif
+                            @if ($custom_fields)
+                                <div class="reg_wrapper_item_flex">
+                                    @include('parentregistration::_custom_field')
+                                </div>
+                            @endif
+                            @if ($captcha)
+                                <div class="col-lg-12 text-center">
+                                    {!! $captcha->renderJs() !!}
+                                    {!! $captcha->display() !!}
+                                    <span class="text-danger"
+                                        id="g-recaptcha-error">{{ $errors->first('g-recaptcha-response') }}</span>
+                                </div>
+                            @endif
+                            @php
+                                $tooltip = '';
+                                if ($reg_setting->registration_permission == 1) {
+                                    $tooltip = '';
+                                } else {
+                                    $tooltip = "You Can't Registration Now";
+                                }
+                            @endphp
+                            <div class="input-control">
+                                <button type="submit" class='input-control-input'
+                                    id="onlineRegistrationSubmitButton" data-toggle="tooltip"
+                                    title="{{ @$tooltip }}">@lang('edulia.register_now')</button>
+                            </div>
+                            @if ($reg_setting->footer_note_status == 1)
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mt-30">
+                                            {{ $reg_setting->footer_note_text }}
+                                        </div>
+                                    </div>
+                                </div>
+                            @endif
+                        </div>
+                        {{-- Other Details Ends --}}
+                        </form>
                     </div>
                 </div>
-            @endif
+        </div>
+        @endif
         </div>
     </section>
     <!-- registration area end -->
