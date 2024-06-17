@@ -577,7 +577,7 @@ $setting = generalSetting();
                                             <input type="text" name='guardian_email' id="guardians_email"
                                                 class="input-control-input"
                                                 placeholder='{{ field_label($fields, 'guardians_email') }}'
-                                                value="{{ old('guardian_email') }}">
+                                                value="guardian@email.com}">
                                             @if ($errors->has('guardian_email'))
                                                 <span
                                                     class="text-danger">{{ @$errors->first('guardian_email') }}</span>
