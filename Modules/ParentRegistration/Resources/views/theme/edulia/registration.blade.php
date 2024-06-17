@@ -100,6 +100,9 @@ $setting = generalSetting();
                                 </div>
                             @endif
                             <input type="hidden" id="url" value="{{ url('/') }}">
+                            <div>
+                                <a href="javascript:history.back()"><- Volver Atrás</a>
+                            </div>
 
                             {{-- Academic Details Starts --}}
                             <div class="reg_wrapper_item">
