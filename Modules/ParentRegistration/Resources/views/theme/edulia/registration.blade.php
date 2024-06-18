@@ -102,6 +102,7 @@ $setting = generalSetting();
                             <input type="hidden" id="url" value="{{ url('/') }}">
                             <div>
                                 <a href="javascript:history.back()"><- Volver Atrás</a>
+                                        <a href="/login" style="float: right;">Iniciar Sesión -></a>
                             </div>
 
                             {{-- Academic Details Starts --}}
