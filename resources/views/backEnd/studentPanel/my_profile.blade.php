@@ -895,13 +895,14 @@
                                                 </div>
                                             </div>
                                         @endif
-                                    @endif
+									
                                     @if (is_show('custom_field'))
                                         {{-- Custom field start --}}
                                         @include('backEnd.customField._coutom_field_show')
                                         {{-- Custom field end --}}
                                     @endif
                                     <!-- End Other Information Part -->
+                                    @endif
                                 </div>
                             </div>
                             <!-- End Profile Tab -->

@@ -29,6 +29,7 @@ class SmAssignSubjectController extends Controller
             if (ApiBaseMethod::checkUrl($request->fullUrl())) {
                 return ApiBaseMethod::sendResponse($classes, null);
             }
+            return view('backEnd.academics.assign_subject_create', compact('classes'));
             return view('backEnd.academics.assign_subject', compact('classes'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
@@ -102,7 +103,7 @@ class SmAssignSubjectController extends Controller
             $subjects = SmSubject::where('active_status', 1)->where('school_id', Auth::user()->school_id)->where('academic_id', getAcademicId())->get();
             $teachers = SmStaff::where('active_status', 1)
                 ->where(function ($q) {
-                    $q->where('role_id', 4)->orWhere('previous_role_id', 4);
+                    $q->where('role_id', 13)->orWhere('role_id', 14)->orWhere('previous_role_id', 4);
                 })->where('school_id', Auth::user()->school_id)->get();
 
             $class_id = $request->class;
@@ -122,7 +123,7 @@ class SmAssignSubjectController extends Controller
         try {
             $subjects = SmSubject::get();
             $teachers = SmStaff::status()->where(function ($q) {
-                $q->where('role_id', 4)->orWhere('previous_role_id', 4);
+                $q->where('role_id', 13)->orWhere('role_id', 14)->orWhere('previous_role_id', 4);
             })->get();
 
 
@@ -134,6 +135,8 @@ class SmAssignSubjectController extends Controller
 
     public function assignSubjectStore(Request $request)
     {
+        print_r($request);
+        dd('assignSubjectStore' . $request);
         try {
             if ($request->subjects && $request->teachers && is_null($request->subjects[0]) && is_null($request->teachers[0])) {
                 Toastr::warning('Empty data submit', 'warning');
@@ -267,7 +270,7 @@ class SmAssignSubjectController extends Controller
             $assign_subjects = SmAssignSubject::where('class_id', $request->class)->where('section_id', $request->section)->get();
             $subjects = SmSubject::get();
             $teachers = SmStaff::status()->where(function ($q) {
-                $q->where('role_id', 4)->orWhere('previous_role_id', 4);
+                $q->where('role_id', 13)->orWhere('role_id', 14)->orWhere('previous_role_id', 4);
             })->get();
             $classes = SmClass::where('active_status', 1)->where('academic_id', getAcademicId())->where('school_id', Auth::user()->school_id)->get();
 

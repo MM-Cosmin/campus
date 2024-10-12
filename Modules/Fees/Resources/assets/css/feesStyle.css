@@ -102,7 +102,7 @@
     }
     .table td, .table th {
         padding: 5px 0;
-        vertical-align: top;
+        vertical-align: middle;
         border-top: 0 solid transparent;
         color: #79838b;
     }

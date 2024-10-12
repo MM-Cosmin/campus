@@ -119,6 +119,9 @@
                                         <tbody>
                                             @foreach ($sharedContents as $key => $sharedContent)
                                                 @php
+                                                    if (!isset($sharedContent->user->full_name)) {
+                                                        continue;
+                                                    }
                                                     $send_type = '';
                                                     if ($sharedContent->send_type == 'G') {
                                                         $send_type = 'Group';
@@ -148,8 +151,7 @@
                                                                     @lang('downloadCenter.link')
                                                                 </a>
                                                             @endif
-                                                            <a class="modalLink dropdown-item"
-                                                                data-modal-size="large-modal"
+                                                            <a class="modalLink dropdown-item" data-modal-size="large-modal"
                                                                 title="@lang('downloadCenter.view_shared_content')"
                                                                 href="{{ route('download-center.content-view-link-modal', [$sharedContent->id]) }}">
                                                                 @lang('common.view')
@@ -188,7 +190,8 @@
                                                                     </button>
                                                                     <a href="{{ route('download-center.content-share-list-delete', [@$sharedContent->id]) }}"
                                                                         class="text-light">
-                                                                        <button class="primary-btn fix-gr-bg" type="submit">
+                                                                        <button class="primary-btn fix-gr-bg"
+                                                                            type="submit">
                                                                             @lang('common.delete')
                                                                         </button>
                                                                     </a>

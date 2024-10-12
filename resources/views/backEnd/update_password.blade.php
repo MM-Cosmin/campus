@@ -41,7 +41,7 @@
                         <div class="row mb-25">
                             <div class="cal-lg-4">
                                 <div class="img-thumb text-center">
-                                    <img style="width:60%" class="rounded-circle"
+                                    <img class="rounded-circle" width="140" height="160"
                                         src="{{ file_exists(@profile()) ? asset(@profile()) : asset('public/uploads/staff/demo/staff.jpg') }}"
                                         alt="">
                                 </div>

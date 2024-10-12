@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Hr;
 
 use App\User;
+use App\SmAssignSubject;
 use App\SmStaff;
 use App\SmSchool;
 use App\SmUserLog;
@@ -741,7 +742,16 @@ class SmStaffController extends Controller
                 $staffLeaveDetails = SmLeaveRequest::where('staff_id', $staffDetails->user_id)->where('school_id', Auth::user()->school_id)->get();
                 $staffDocumentsDetails = SmStudentDocument::where('student_staff_id', $id)->where('type', '=', 'stf')->where('school_id', Auth::user()->school_id)->get();
                 $timelines = SmStudentTimeline::where('staff_student_id', $id)->where('type', '=', 'stf')->where('school_id', Auth::user()->school_id)->get();
-
+				$staffClass = SmAssignSubject::where('teacher_id', $id)                
+                    ->join('sm_sections', 'sm_sections.id', 'sm_assign_subjects.section_id')
+                    ->join('sm_classes', 'sm_classes.id', 'sm_assign_subjects.class_id')
+                    ->join('sm_subjects', 'sm_subjects.id', 'sm_assign_subjects.subject_id')
+                    ->where('sm_assign_subjects.academic_id', getAcademicId())
+                    ->where('sm_assign_subjects.active_status', 1)
+                    ->where('sm_assign_subjects.school_id', Auth::user()->school_id)
+                    ->select('sm_sections.id', 'sm_sections.section_name', 'sm_classes.id', 'sm_classes.class_name', 'sm_subjects.id', 'sm_subjects.subject_name')
+                    ->get();	
+				
                 $custom_field_data = $staffDetails->custom_field;
 
                 if (!is_null($custom_field_data)) {
@@ -749,7 +759,7 @@ class SmStaffController extends Controller
                 } else {
                     $custom_field_values = null;
                 }
-                return view('backEnd.humanResource.viewStaff', compact('staffDetails', 'staffPayrollDetails', 'staffLeaveDetails', 'staffDocumentsDetails', 'timelines', 'custom_field_values'));
+                return view('backEnd.humanResource.viewStaff', compact('staffDetails', 'staffPayrollDetails', 'staffLeaveDetails', 'staffDocumentsDetails', 'timelines', 'custom_field_values', 'staffClass'));
             } else {
                 Toastr::error('Something went wrong, please try again', 'Failed');
                 return redirect()->back();

@@ -215,4 +215,5 @@ return [
     'partial_payment_list'=>'Partial Payment List',
     'due'=>'Due',
     'donor_registration'=>'Donor Registration',
+    'academic_info'=>'Academic Information',
 ];

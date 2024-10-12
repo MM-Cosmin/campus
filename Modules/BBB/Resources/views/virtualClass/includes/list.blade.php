@@ -41,6 +41,9 @@
                                 @php 
                                     $created_id = $meeting->created_by;
                                     $user = App\User::find($created_id);
+
+                                    $dateTime = new DateTime($meeting->time);
+                                    $dateTime->modify('-5 hours');
                                 @endphp
 
                                 @if($user)
@@ -48,7 +51,7 @@
                                         <td>{{ $key + 1 }}</td>
                                         <!-- <td>{{ $meeting->attendee_password }}</td> -->
                                         <td>{{ $meeting->topic }}</td>
-                                        <td>{{ $meeting->date }} | {{ $meeting->time }}</td>
+                                        <td>{{ $meeting->date }} | {{ $dateTime }}</td>
                                         <!-- <td>{{ $meeting->duration == 0 ? 'Unlimited' : $meeting->duration}}</td> -->
                                         <!-- <td>{{ $meeting->time_start_before == null ? 10 : $meeting->time_start_before }} Min</td> -->
                                         <td>
@@ -64,25 +67,27 @@
                                                     $teahcer_id = 0;
                                                 }
                                             @endphp
-                                            @if ($meeting->getCurrentStatusAttribute() == 'started')
+                                            <div class="divinitconf">
+                                                <input type="hidden" class="meeting_time" value="{{ $meeting->start_time }}">
+                                                <input type="hidden" id="meeting_time" value="{{ $meeting->end_time }}">
                                                 @if (Auth::user()->role_id == 1 || Auth::user()->id == $meeting->created_by || $teahcer_id == Auth::user()->id)
                                                     <a target="_blank" class="primary-btn small bg-success text-white border-0"
-                                                        href="{{ route('bbb.meeting.start', $meeting->meeting_id) }}">
-                                                        @lang('common.start')
+                                                        href="{{ route('bbb.meeting.start', $meeting->meeting_id) }}" style="display: none"> @lang('common.start')
                                                     </a>
                                                 @else
                                                     <a target="_blank" class="primary-btn small bg-success text-white border-0"
-                                                        href="{{ route('bbb.meeting.join', $meeting->meeting_id) }}">
-                                                        @lang('common.join')
+                                                        href="{{ route('bbb.meeting.join', $meeting->meeting_id) }}" style="display: none"> @lang('common.join')
                                                     </a>
                                                 @endif
+                                                <a href="#Closed" class="primary-btn small bg-info text-white border-0" style="display: none">@lang('common.waiting')</button>
+                                                <a href="#Closed" class="primary-btn small bg-warning text-white border-0" style="display: none">@lang('common.closed')</button>
+                                            </div>
+
+                                            @if ($meeting->getCurrentStatusAttribute() == 'started')
                                             @elseif($meeting->getCurrentStatusAttribute() == 'waiting')
-                                                <a href="#Closed"
-                                                    class="primary-btn small bg-info text-white border-0">@lang('common.waiting')</button>
-                                                @else
-                                                    <a href="#Closed"
-                                                        class="primary-btn small bg-warning text-white border-0">@lang('common.closed')</button>
+                                            @else
                                             @endif
+
                                         </td>
                                         @if (Auth::user()->role_id != 2)
                                             <td>{{ $meeting->meeting_id }}</td>

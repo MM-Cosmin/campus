@@ -92,4 +92,5 @@
   'read_more' => 'Read More',
   'your' => 'Your',
   'dashboard' => 'Panel informativo',
+  'to' => 'To',
 );

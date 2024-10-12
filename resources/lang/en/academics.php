@@ -112,4 +112,7 @@ return[
     'select_section' => 'Select Section',
     'select_subject' => 'Select Subject',
     'reference' => 'Reference',
+    'country' => 'Country',
+    'city' => 'City',
+    'deans' => 'Deans',
 ];

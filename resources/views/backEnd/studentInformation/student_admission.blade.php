@@ -50,10 +50,12 @@
                                         <a class="nav-link active" href="#personal_info" role="tab"
                                             data-toggle="tab">@lang('student.personal_info')</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#parents_and_guardian_info" role="tab"
-                                            data-toggle="tab">@lang('student.parents_and_guardian_info')</a>
-                                    </li>
+                                    @if (is_show(false))
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#parents_and_guardian_info" role="tab"
+                                                data-toggle="tab">@lang('student.parents_and_guardian_info')</a>
+                                        </li>
+                                    @endif
                                     <li class="nav-item">
                                         <a class="nav-link" href="#document_info" role="tab"
                                             data-toggle="tab">@lang('student.document_info')</a>
@@ -147,7 +149,7 @@
                                                                         @foreach ($sessions as $session)
                                                                             <option value="{{ $session->id }}"
                                                                                 {{ old('session', getAcademicId()) == $session->id ? 'selected' : '' }}>
-                                                                                {{ $session->year }}[{{ $session->title }}]
+                                                                                {{ $session->title }}
                                                                             </option>
                                                                         @endforeach
                                                                     </select>
@@ -789,6 +791,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
+                                                    @if (is_show(false))
                                                     <div class="form-section">
                                                         <div class="row">
                                                             <div class="col-lg-12">
@@ -952,9 +955,11 @@
                                                             @endif
                                                         </div>
                                                     </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
+                                        @if (is_show(false))
                                         <div role="tabpanel" class="tab-pane fade" id="parents_and_guardian_info">
                                             <div class="row pt-4 row-gap-24">
                                                 <div class="col-lg-12">
@@ -1653,6 +1658,7 @@
                                                 </div> --}}
                                             </div>
                                         </div>
+                                        @endif
                                         <div role="tabpanel" class="tab-pane fade" id="document_info">
                                             <div class="row pt-4 row-gap-24">
                                                 <div class="col-lg-6">

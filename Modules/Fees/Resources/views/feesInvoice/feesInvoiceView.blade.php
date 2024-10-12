@@ -74,73 +74,45 @@
                             </thead>
                         </table>
                         <!-- middle content  -->
-                        <table class="table">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <!-- single table  -->
-                                    <table class="mb_30">
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="addressleft_text">
-                                                        <p><span>@lang('fees.fees_invoice_issued_to')</p>
-                                                        <p><span><strong>@lang('student.student_name') </span> <span class="nowrap">: {{@$invoiceInfo->studentInfo->full_name}}</span> </strong></p>
-                                                        <p><span>@lang('student.class_section')</span> <span>: {{@$invoiceInfo->recordDetail->class->class_name}} ({{@$invoiceInfo->recordDetail->section->section_name}})</span> </p>
-                                                        <p><span>@lang('student.roll_no')</span> <span>: {{@$invoiceInfo->recordDetail->roll_no}}</span> </p>
-                                                        <p><span>@lang('student.admission_no')</span> <span>: {{@$invoiceInfo->studentInfo->admission_no}}</span> </p>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!--/ single table  -->
-                                </td>
-                                <td >
-                                    <!-- single table  -->
-                                    <table class="mb_30 margin_auto">
-                                        <tbody>
-                                        <tr>
-                                            <td>
-                                                @php
-                                                    $subTotal = $invoiceDetails->sum('sub_total');
-                                                    $paidAmount = $invoiceDetails->sum('paid_amount');
-                                                    $paymentStatus = $subTotal - $paidAmount;
-                                                @endphp
-                                                <div class="addressright_text">
-                                                    <p><span><strong>@lang('fees.invoice_number')</span> <span>: {{$invoiceInfo->invoice_id}}</span> </strong></p>
-                                                    <p><span>@lang('fees.create_date') </span> <span>: {{dateConvert($invoiceInfo->create_date)}}</span> </p>
-                                                    <p><span>@lang('fees.due_date') </span> <span>: {{dateConvert($invoiceInfo->due_date)}}</span> </p>
-                                                    <p>
-                                                                <span>
-                                                                    @lang('fees.payment_status')
-                                                                </span>
-                                                        <span>:
-                                                                    @if ($paymentStatus == 0)
-                                                                @lang('fees.paid')
-                                                            @else
-                                                                @if ($paidAmount > 0)
-                                                                    @lang('fees.partial')
-                                                                @else
-                                                                    @lang('fees.unpaid')
-                                                                @endif
-                                                            @endif
-                                                                </span>
-                                                    </p>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    <!--/ single table  -->
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+						@php
+							$subTotal = $invoiceDetails->sum('sub_total');
+							$paidAmount = $invoiceDetails->sum('paid_amount');
+							$paymentStatus = $subTotal - $paidAmount;
+						@endphp
+						<div class="container">
+                            <div class="row">
+                                <div class="col-8">
+									<p><span>@lang('fees.fees_invoice_issued_to')</p>
+									<p><strong> <span class="nowrap">{{@$invoiceInfo->studentInfo->full_name}}</span> </strong></p>
+              <p><span>{{@$invoiceInfo->recordDetail->class->class_name}} ({{@$invoiceInfo->recordDetail->section->section_name}})</span> </p>
+                                </div>
+                                <div class="col-2">
+									  <p><span>@lang('fees.invoice_number')</span></p>
+									  <p><span>@lang('fees.create_date') </span></p>
+									  <p><span>@lang('fees.due_date') </span></p>
+									  <p><span>@lang('fees.payment_status')</span></p>
+                                </div>								
+                                <div class="col-2">
+									 <p><span>{{$invoiceInfo->invoice_id}}</span></p>
+									 <p><span>{{dateConvert($invoiceInfo->create_date)}}</span></p>
+									 <p><span>{{dateConvert($invoiceInfo->due_date)}}</span></p>							
+									 <p><span>@if ($paymentStatus == 0)
+											@lang('fees.paid')
+										@else
+											@if ($paidAmount > 0)
+												@lang('fees.partial')
+											@else
+												@lang('fees.unpaid')
+											@endif
+										@endif
+									</span></p>
+                                </div>
+                        	</div>
+                        </div>
                     </div>
                 </div>
             </div>
-
+			<br>
             <!-- invoice print part end -->
             <table class="table border_table mb_30 description_table" >
                 <thead>
@@ -149,8 +121,8 @@
                     <th>@lang('fees.fees_type')</th>
                     <th>@lang('accounts.amount')</th>
                     @if (is_show(false))
-                    <th>@lang('fees.waiver')</th>
-                    <th>@lang('fees.fine')</th>
+						<th>@lang('fees.waiver')</th>
+						<th>@lang('fees.fine')</th>
                     @endif
                     <th>@lang('fees::feesModule.paid_amount')</th>
                     <th class="text-right">@lang('fees.sub_total')</th>
@@ -248,6 +220,7 @@
                 </tfoot>
             </table>
             @if($banks)
+			@if (is_show(false))
             <div class="col-lg-12">
                 <table class="table border_table mb_30 description_table" >
                     <thead>
@@ -272,6 +245,7 @@
                     </tbody>
                 </table>
             </div>
+			@endif
             @endif
         </div>
     </section>

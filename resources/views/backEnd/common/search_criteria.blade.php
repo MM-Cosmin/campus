@@ -39,7 +39,7 @@ $visiable = $visiable ?? [];
             @foreach ($sessions as $session)
             <option value="{{ $session->id }}"
                 {{ isset($academic_year) && $academic_year == $session->id ? 'selected' : (getAcademicId() == $session->id ? 'selected' : '') }}>
-                {{ $session->year }}[{{ $session->title }}]</option>
+                {{ $session->title }}</option>
             @endforeach
             @endisset
 

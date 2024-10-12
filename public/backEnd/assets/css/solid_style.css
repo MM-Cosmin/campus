@@ -6,7 +6,7 @@ body - var(--body_color)
 */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 :root {
-  --primary_color: #5e2dd8;
+  --primary_color: ##1a2b6d;
   --secondary_color: #25252a;
   --body_color: #76839a;
   --shadow: 0 8px 24px #e5e4e6;

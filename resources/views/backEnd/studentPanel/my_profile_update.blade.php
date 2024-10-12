@@ -10,13 +10,13 @@
 @endphp
 @push('css')
     <style>
-        .input-right-icon button.primary-btn-small-input {
+         .input-right-icon button.primary-btn-small-input {
             top: 8px !important;
             right: 11px !important;
         }
         .ti-calendar:before {
             position: relative !important;
-            left: 360px;
+            left: 345px;
             bottom: 35px !important;
         }
     </style>
@@ -37,13 +37,6 @@
 
     <section class="admin-visitor-area up_st_admin_visitor">
         <div class="container-fluid p-0">
-            <div class="row mb-30">
-                <div class="col-lg-6">
-                    <div class="main-title">
-                        <h3>@lang('student.profile_update') </h3>
-                    </div>
-                </div>
-            </div>
             {{ Form::open(['class' => 'form-horizontal', 'files' => true, 'route' => 'my-profile-update', 'method' => 'POST', 'enctype' => 'multipart/form-data', 'id' => 'student_form']) }}
 
             <div class="row">
@@ -167,7 +160,7 @@
                                         </div>
                                     </div>
                                 @endif
-                                @if (in_array('gender', $fields))
+                                @if (in_array('last_name', $fields))
                                     <div class="col-lg-3">
                                         <div class="primary_input">
                                             <label class="primary_input_label" for="">@lang('common.gender')
@@ -211,7 +204,7 @@
                                 @endif
                                 @if (in_array('date_of_birth', $fields))
                                     <div class="col-lg-3">
-                                        <div class="no-gutters input-right-icon">
+                                        <div class=" input-right-icon">
                                             <div class="col">
                                                 <div class="primary_input">
                                                     <label class="primary_input_label" for="">@lang('common.date_of_birth')
@@ -232,16 +225,16 @@
                                                     @endif
                                                 </div>
                                             </div>
-                                            <button class="" type="button">
-                                                <label class="m-0 p-0" for="startDate">
-                                                    <i class="ti-calendar" id="admission-date-icon"></i>
-                                                </label>
-                                            </button>
+                                             <button class="btn-date"
+													 data-id="#date_of_birth"
+													 type="button">
+												 <i class="ti-calendar"
+													id="start-date-icon"></i>
+											</button>
                                         </div>
                                     </div>
                                 @endif
                             </div>
-                            <div class="row mb-20">
                                 @if (in_array('blood_group', $fields))
                                     <div class="col-lg-2">
                                         <div class="primary_input">
@@ -326,6 +319,7 @@
                                         </div>
                                     </div>
                                 @endif
+								@if (is_show(false))
                                 @if (in_array('email_address', $fields))
                                     <div class="col-lg-3">
                                         <div class="primary_input">
@@ -346,6 +340,8 @@
                                         </div>
                                     </div>
                                 @endif
+								@endif
+                            <div class="row mb-20">
                                 @if (in_array('phone_number', $fields))
                                     <div class="col-lg-3">
                                         <div class="primary_input">
@@ -365,8 +361,99 @@
                                             @endif
                                         </div>
                                     </div>
-                                @endif
-                            </div>
+                                @endif								
+							@if (in_array('permanent_address', $fields))
+								<div class="col-lg-6">
+									<div class="primary_input">
+										<label class="primary_input_label" for="">@lang('student.permanent_address')
+											@if (is_required('permanent_address') == true)
+											<span class="text-danger"> *</span>
+											@endif </label>
+										<input class="primary_input_field form-control{{ $errors->has('current_address') ? ' is-invalid' : '' }}"
+                                                type="text" name="current_address" value="{{ $student->current_address }}">
+									</div>
+								</div>
+								 <div class="col-lg-3">
+                                        <div class="primary_input">
+                                            <label class="primary_input_label" for="">@lang('academics.country')
+                                                @if (is_required('country') == true)
+                                                    <span class="text-danger"> *</span>
+                                                @endif
+                                            </label>
+                                            <input class="primary_input_field form-control{{ $errors->has('country') ? ' is-invalid' : '' }}"
+                                                type="text" name="country" value="{{ $student->country }}">
+
+                                            @if ($errors->has('country'))
+                                                <span class="text-danger">
+                                                    {{ $errors->first('country') }}
+                                                </span>
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-20">
+								 <div class="col-lg-3">
+                                        <div class="primary_input">
+                                            <label class="primary_input_label" for="">@lang('academics.city')
+                                                @if (is_required('city') == true)
+                                                    <span class="text-danger"> *</span>
+                                                @endif
+                                            </label>
+                                            <input class="primary_input_field form-control{{ $errors->has('city') ? ' is-invalid' : '' }}"
+                                                type="text" name="city" value="{{ $student->city }}">
+
+                                            @if ($errors->has('city'))
+                                                <span class="text-danger">
+                                                    {{ $errors->first('city') }}
+                                                </span>
+                                            @endif
+                                        </div>
+                                    </div>
+								<div class="col-lg-3">
+                                        <div class="primary_input">
+                                            <label class="primary_input_label" for="">@lang('student.postal_code')
+                                                @if (is_required('postal_code') == true)
+                                                    <span class="text-danger"> *</span>
+                                                @endif
+                                            </label>
+                                            <input class="primary_input_field form-control{{ $errors->has('postal_code') ? ' is-invalid' : '' }}"
+                                                type="text" name="postal_code" value="{{ $student->postal_code }}">
+
+                                            @if ($errors->has('postal_code'))
+                                                <span class="text-danger">
+                                                    {{ $errors->first('postal_code') }}
+                                                </span>
+                                            @endif
+                                        </div>
+                                    </div>
+								@endif
+								@if (in_array('photo', $fields))							
+								<div class="col-lg-6">
+									<div class="primary_input">
+										<label class="primary_input_label" for="">@lang('student.photo')
+											@if (is_required('fathers_photo') == true)
+											<span class="text-danger"> *</span>
+											@endif
+										</label>
+										<div class="primary_file_uploader">
+											<input class="primary_input_field" type="text"
+												   id="placeholderPhoto"
+												   placeholder="{{ isset($student->student_photo) && $student->student_photo != '' ? getFilePath3($student->student_photo) : (is_required('student_photo') == true ? __('common.photo') . '*' : __('common.photo')) }}"
+												   disabled>
+											<button class="" type="button">
+												<label class="primary-btn small fix-gr-bg"
+													   for="photo">{{ __('common.browse') }}</label>
+												<input type="file" class="d-none" name="photo"
+													   id="photo">
+											</button>
+										</div>
+										<span class="text-danger">{{ $errors->first('photo') }}</span>
+									</div>
+								</div>
+                            @endif
+															 
+                            </div>				
+							@if (is_show(false))
                             <div class="row mb-20">
                                 @if (in_array('admission_date', $fields))
                                     <div class="col-lg-3">
@@ -533,24 +620,7 @@
                                     </div>
                                 </div>
                             @endif
-                            <div class="row mb-20">
-
-                                @if (in_array('photo', $fields))
-                                    <div class="col-lg-3">
-                                        <div class="primary_input">
-                                            <div class="primary_file_uploader">
-                                                <input class="primary_input_field" type="text" id="placeholderPhoto"
-                                                    placeholder="{{ $student->student_photo != '' ? getFilePath3($student->student_photo) : (is_required('student_photo') == true ? trans('common.student_photo') . '*' : trans('common.student_photo')) }}"
-                                                    disabled>
-                                                <button class="" type="button">
-                                                    <label class="primary-btn small fix-gr-bg"
-                                                        for="upload_content_file">{{ __('common.browse') }}</label>
-                                                    <input type="file" class="d-none" name="photo" id="upload_content_file">
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endif
+                            <div class="row mb-20">                               
                                 @if (in_array('add_parent', $fields))
                                     <div class="col-lg-6 text-right">
                                         <div class="row">
@@ -1133,19 +1203,7 @@
                                                 cols="0" rows="3" name="current_address" id="current_address">{{ $student->current_address }}</textarea>
                                         </div>
                                     </div>
-                                @endif
-                                @if (in_array('permanent_address', $fields))
-                                    <div class="col-lg-4">
-                                        <div class="primary_input mt-20">
-                                            <label class="primary_input_label" for="">@lang('student.permanent_address')
-                                                @if (is_required('permanent_address') == true)
-                                                    <span class="text-danger"> *</span>
-                                                @endif </label>
-                                            <textarea class="primary_input_field form-control{{ $errors->has('current_address') ? ' is-invalid' : '' }}"
-                                                cols="0" rows="3" name="permanent_address" id="permanent_address">{{ $student->permanent_address }}</textarea>
-                                        </div>
-                                    </div>
-                                @endif
+                                @endif                               
                             </div>
                             <div class="row mt-40 mb-4">
                                 <div class="col-lg-12">
@@ -1561,6 +1619,7 @@
                                     </div>
                                 @endif
                             </div>
+						
                             
 
                             {{-- Custom Field Start --}}
@@ -1577,6 +1636,7 @@
                                 @include('backEnd.studentInformation._custom_field')
                                 {{-- Custom Field End --}}
                             @endif
+						@endif
                             @if (count($fields) > 0)
                                 <div class="row mt-5">
                                     <div class="col-lg-12 text-center">
@@ -1630,7 +1690,7 @@
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Crop Image And Upload</h4>
+                    <h4 class="modal-title">@lang('hr.crop_image_and_upload')</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
@@ -1641,7 +1701,7 @@
                     <button class="btn rotate float-right" data-deg="-90">
                         <i class="ti-back-left"></i></button>
                     <hr>
-                    <a href="javascript:;" class="primary-btn fix-gr-bg pull-right" id="upload_logo">Crop</a>
+                    <a href="javascript:;" class="primary-btn fix-gr-bg pull-right" id="upload_logo">@lang('hr.crop')</a>
                 </div>
             </div>
         </div>

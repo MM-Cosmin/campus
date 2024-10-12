@@ -16,7 +16,7 @@
                     @endif
                 </div>
             </td>
-            <td>
+            <td style="display:none;">
                 <div class="primary_input">
                     <input class="primary_input_field form-control weaver{{ $errors->has('weaver') ? ' is-invalid' : '' }}" type="text" name="groups[{{$key}}][weaver]" autocomplete="off" value="{{old('weaver')}}">
                     
@@ -90,7 +90,7 @@
                 @endif
             </div>
         </td>
-        <td>
+        <td style="display:none;">
             <div class="primary_input">
                 <input class="primary_input_field form-control weaver{{ $errors->has('weaver') ? ' is-invalid' : '' }}" type="text" name="types[{{$feesType->id}}][weaver]" autocomplete="off" value="{{old('weaver')}}">
                 

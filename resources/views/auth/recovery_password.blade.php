@@ -111,6 +111,11 @@ $css = 'background:' . $login_background->color;
                             <img src="{{asset(@$setting->logo)}}" alt="" class="logoimage">
                         </a>
                     </div>
+                    <div class="logo-container">
+                        <a href="{{ url('/') }}">
+                            <img src="{{ asset(generalSetting()->logo) }}" alt="" class="logoimage">
+                        </a>
+                    </div>
                     <div class="text-center">
                         <h5 class="text-uppercase font-bold">@lang('auth.reset_password')</h5>
                         @if(session()->has('message-success') != "")

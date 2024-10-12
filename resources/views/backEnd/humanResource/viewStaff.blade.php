@@ -62,7 +62,6 @@
         </div>
     </section>
     <section class="mb-40 student-details">
-
         <div class="container-fluid p-0">
             <div class="row">
                 <div class="col-lg-3 mb-30">
@@ -131,6 +130,7 @@
                                         </div>
                                     </div>
                                 </div>
+								@if (is_show(false))
                                 <div class="single-meta">
                                     <div class="d-flex justify-content-between">
                                         <div class="name">
@@ -167,6 +167,7 @@
                                         </div>
                                     </div>
                                 </div>
+								@endif
                                 <div class="single-meta">
                                     <div class="d-flex justify-content-between">
                                         <div class="name">
@@ -192,6 +193,7 @@
                                 <a class="nav-link @if (Session::get('staffDocuments') != 'active' && Session::get('staffTimeline') != 'active') active @endif" href="#studentProfile"
                                     role="tab" data-toggle="tab">@lang('hr.profile')</a>
                             </li>
+							@if (is_show(false))
                             <li class="nav-item">
                                 <a class="nav-link" href="#payroll" role="tab" data-toggle="tab">@lang('hr.payroll')</a>
                             </li>
@@ -202,6 +204,7 @@
                                 <a class="nav-link {{ Session::get('staffDocuments') == 'active' ? 'active' : '' }}"
                                     href="#staffDocuments" role="tab" data-toggle="tab">@lang('hr.documents')</a>
                             </li>
+							@endif
                             <li class="nav-item">
                                 <a class="nav-link {{ Session::get('staffTimeline') == 'active' ? 'active' : '' }}"
                                     href="#staffTimeline"
@@ -215,6 +218,7 @@
                         </ul>
     
                         <!-- Tab panes -->
+						<br>
                         <div class="tab-content mt-10">
                             <!-- Start Profile Tab -->
                             <div role="tabpanel" class="tab-pane fade @if (Session::get('staffDocuments') != 'active' && Session::get('staffTimeline') != 'active') show active @endif"
@@ -237,6 +241,7 @@
                                             </div>
                                         </div>
                                     </div>
+									@if (is_show(false))
                                     <div class="single-info">
                                         <div class="row">
                                             <div class="col-lg-5 col-md-6">
@@ -253,6 +258,7 @@
                                             </div>
                                         </div>
                                     </div>
+									@endif
                                     <div class="single-info">
                                         <div class="row">
                                             <div class="col-lg-5 col-md-6">
@@ -269,6 +275,7 @@
                                             </div>
                                         </div>
                                     </div>
+									@if (is_show(false))
                                     <div class="single-info">
                                         <div class="row">
                                             <div class="col-lg-5 col-md-6">
@@ -285,6 +292,7 @@
                                             </div>
                                         </div>
                                     </div>
+									@endif
                                     <div class="single-info">
                                         <div class="row">
                                             <div class="col-lg-5 col-md-6">
@@ -334,8 +342,25 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>									
+                                    <div class="single-info">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5">
+                                                <div class="">
+                                                    @lang('hr.current_address')
+                                                </div>
+                                            </div>
     
+                                            <div class="col-lg-7 col-md-6">
+                                                <div class="">
+                                                    @if (isset($staffDetails))
+                                                        {{ $staffDetails->current_address }}
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+    								@if (is_show(false))
                                     <div class="single-info">
                                         <div class="row">
                                             <div class="col-lg-5 col-md-6">
@@ -407,7 +432,8 @@
                                             </div>
                                         </div>
                                     </div>
-    
+    								@endif
+									@if (is_show(false))
                                     <!-- Start Parent Part -->
                                     <h4 class="stu-sub-head mt-40">@lang('hr.address')</h4>
                                     <div class="single-info">
@@ -603,6 +629,28 @@
                                         </div>
                                     </div>
                                     <!-- End Other Information Part -->
+									@endif
+									
+									{{--<br>
+									<h4 class="stu-sub-head">@lang('hr.academic_info')</h4>
+									@foreach ($staffClass as $value)
+									<div class="single-info">
+                                        <div class="row">
+                                            <div class="col-lg-5 col-md-5">
+                                                <div class="">
+													{{ $value->section_name }}
+                                                </div>
+                                            </div>
+    
+                                            <div class="col-lg-7 col-md-6">
+                                                <div class="">
+													# {{ $value->class_name }} - {{ $value->subject_name }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+									@endforeach
+									--}}
                                     {{-- Custom field start --}}
                                     @include('backEnd.customField._coutom_field_show')
                                     {{-- Custom field end --}}

@@ -33,7 +33,7 @@ class SmAssignClassTeacherController extends Controller
             $teachers = SmStaff::status()->where(function ($q) {
                 $q->where('role_id', 4)->orWhere('previous_role_id', 4);
             })->get();
-            $assign_class_teachers = SmAssignClassTeacher::with('class', 'section', 'classTeachers')->where('academic_id', getAcademicId())->status()->orderBy('class_id', 'ASC')->orderBy('section_id', 'ASC')->get();
+            $assign_class_teachers = SmAssignClassTeacher::with('class', 'section', 'classTeachers')->where('academic_id', getAcademicId())->status()->orderBy('class_id', 'ASC')->orderBy('class_id', 'ASC')->get();
 
             return view('backEnd.academics.assign_class_teacher', compact('classes', 'teachers', 'assign_class_teachers'));
         } catch (\Exception $e) {
@@ -44,11 +44,10 @@ class SmAssignClassTeacherController extends Controller
 
     public function store(SmAssignClassTeacherRequest $request)
     {
-        DB::beginTransaction();
+        dd('Aqui2');
         try {
             $assigned_class_teacher = SmAssignClassTeacher::where('active_status', 1)
                 ->where('class_id', $request->class)
-                ->where('section_id', $request->section)
                 ->where('academic_id', getAcademicId())
                 ->where('school_id', auth()->user()->school_id)
                 ->first();
@@ -56,7 +55,6 @@ class SmAssignClassTeacherController extends Controller
             if (empty($assigned_class_teacher)) {
                 $assign_class_teacher = new SmAssignClassTeacher();
                 $assign_class_teacher->class_id = $request->class;
-                $assign_class_teacher->section_id = $request->section;
                 $assign_class_teacher->school_id = auth()->user()->school_id;
                 $assign_class_teacher->academic_id = getAcademicId();
                 $assign_class_teacher->save();
@@ -71,7 +69,6 @@ class SmAssignClassTeacherController extends Controller
                 DB::commit();
 
                 $data['class_id'] = $request->class;
-                $data['section_id'] = $request->section;
                 $data['teacher_name'] = $class_teacher->teacher->full_name;
                 $this->sent_notifications('Assign_Class_Teacher', (array)$class_teacher->teacher->user_id, $data, ['Teacher']);
 
@@ -92,7 +89,7 @@ class SmAssignClassTeacherController extends Controller
 
     public function edit(Request $request, $id)
     {
-
+		dd('Aqui3');
         try {
             $classes = SmClass::get();
             $teachers = SmStaff::status()->where(function ($q) {
@@ -116,7 +113,7 @@ class SmAssignClassTeacherController extends Controller
 
     public function update(SmAssignClassTeacherRequest $request, $id)
     {
-
+		dd('Aqui4');
         $is_duplicate = SmAssignClassTeacher::where('school_id', Auth::user()->school_id)->where('academic_id', getAcademicId())->where('class_id', $request->class)->where('section_id', $request->section)->where('id', '!=', $request->id)->first();
         if ($is_duplicate) {
             Toastr::warning('Duplicate entry found!', 'Warning');

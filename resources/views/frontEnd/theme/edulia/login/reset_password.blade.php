@@ -48,6 +48,7 @@
                                 </span>
                             @endif
                         </div>
+                        <a href="{{ route('login') }}" id='forget'>@lang('auth.login')?</a>
                         <div class="input-control">
                             <input type="submit" class='input-control-input' value="Submit">
                         </div>

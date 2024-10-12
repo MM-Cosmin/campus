@@ -31,7 +31,7 @@ class SmStudent extends Model
     protected $casts = [
         'user_id' => 'integer',
         'role_id' => 'integer',
-        'admission_no' => 'integer',
+        //admission_no' => 'integer',
         //'roll_no' => 'integer',
         'age' => 'integer',
         'bloodgroup_id' => 'integer',

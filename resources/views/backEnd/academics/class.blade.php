@@ -71,7 +71,52 @@
                                             </div>
                                         </div>
                                     </div>
-                                   
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-lg-12"> 
+                                            <div class="primary_input">
+                                                <label class="primary_input_label" for="">@lang('academics.country') <span class="text-danger"> *</span></label>
+                                                <input class="primary_input_field form-control{{ @$errors->has('country') ? ' is-invalid' : '' }}"
+                                                       type="text" name="country" autocomplete="off"
+                                                       value="{{isset($classById)? @$classById->country: ''}}">
+                                                <input type="hidden" name="id"
+                                                       value="{{isset($classById)? $classById->id: ''}}">
+                                               
+                                                
+                                                @if ($errors->has('country'))
+                                                    <span class="text-danger" >
+                                                       {{ @$errors->first('country') }}
+                                                    </span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+									<br>
+                                    <div class="row">
+                                        <div class="col-lg-12"> 
+                                            <div class="primary_input">
+                                                <label class="primary_input_label" for="">@lang('academics.city') <span class="text-danger"> *</span></label>
+                                                <input class="primary_input_field form-control{{ @$errors->has('city') ? ' is-invalid' : '' }}"
+                                                       type="text" name="city" autocomplete="off"
+                                                       value="{{isset($classById)? @$classById->city: ''}}">
+                                                <input type="hidden" name="id"
+                                                       value="{{isset($classById)? $classById->id: ''}}">
+                                               
+                                                
+                                                @if ($errors->has('city'))
+                                                    <span class="text-danger" >
+                                                       {{ @$errors->first('city') }}
+                                                    </span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="primary_input">
+                                            </div>
+                                        </div>
+                                    </div>
                                     @if (generalSetting()->result_type == 'mark')
                                     <div class="row mt-25">
                                         <div class="col-lg-12"> 
@@ -164,18 +209,38 @@
                                         <thead>
                                     
                                         <tr>
+                                            <th>@lang('academics.country')</th>
+                                            <th>@lang('academics.city')</th>
+                                            <th>@lang('academics.deans')</th>
                                             <th>@lang('common.class')</th>
                                             <th>@lang('common.section')</th>
                                             @if (@generalSetting()->result_type == 'mark')
                                             <th>@lang('exam.pass_mark')</th>
                                             @endif 
                                             <th>@lang('student.students')</th>
+                                            @if(auth()->user()->role_id == 1 || auth()->user()->role_id == 5 )
                                             <th>@lang('common.action')</th>
+                                            @endif
                                         </tr>
                                         </thead>
                                         <tbody>
                                         @foreach($classes as $class)
+											@php $doyenneName = ''; @endphp
+											@foreach($doyennes as $doyenne)
+												@if(@$class->class_name == @$doyenne->class_name)
+													@php 
+														$doyenneName = $doyenne->full_name;													
+													@endphp
+													@break
+												@endif											
+											@endforeach
+											
+											@if ($doyenneName == auth()->user()->full_name && $doyenneName || auth()->user()->role_id == 1 || auth()->user()->role_id == 5 )
+											
                                             <tr>
+                                                <td valign="top">{{@$class->country}}</td>
+                                                <td valign="top">{{@$class->city}}</td>
+                                                <td valign="top">{{$doyenneName}}</td>
                                                 <td valign="top">{{@$class->class_name}}</td>
                                                 <td> 
                                                     @if(@$class->groupclassSections)
@@ -194,7 +259,7 @@
                                                     <a href="{{route('sorting_student_list',[$class->id])}}">{{$class->records_count}}</a>
                                                 </td>
         
-        
+                                                @if(auth()->user()->role_id == 1 || auth()->user()->role_id == 5)
                                                 <td valign="top">
                                                     @php
                                                         $routeList = [
@@ -211,6 +276,7 @@
                                                     @endphp
                                                     <x-drop-down-action-component :routeList="$routeList" />
                                                 </td>
+                                                @endif
                                             </tr>
         
                                             <div class="modal fade admin-query" id="deleteClassModal{{@$class->id}}">
@@ -241,6 +307,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+											@endif	
                                         @endforeach
                                         </tbody>
                                     </table>

@@ -191,8 +191,7 @@ $css = 'background:' . $login_background->color;
                                         <label for="rememberMe">@lang('auth.remember_me')</label>
                                     </div>
                                     <div>
-                                        <a href="<?php echo e(route('recoveryPassord')); ?>">@lang('auth.forget_password')
-                                            ?</a>
+                                        <a href="<?php echo e(route('recoveryPassord')); ?>">@lang('auth.forget_password')</a>
                                     </div>
                                 </div>
 

@@ -72,14 +72,14 @@
     --sidebar_hover: #ffffff;
     /*--primary-color: #7c32ff;*/
     --primary-color: #2b6ca3;
-    --card-gradient-cyan: linear-gradient(to right, #06b6d4, #22d3ee);
-    --card-gradient-violet: linear-gradient(to right, #8b5cf6, #a78bfa);
-    --card-gradient-blue: linear-gradient(to right, #3b82f6, #60a5fa);
-    --card-gradient-fuchsia: linear-gradient(to right, #d946ef, #e879f9);
-    --card-gradient-cyan-hover: linear-gradient(to right, #06b6d4, #22d3ee);
-    --card-gradient-violet-hover: linear-gradient(to right, #8b5cf6, #a78bfa);
-    --card-gradient-blue-hover: linear-gradient(to right, #3b82f6, #60a5fa);
-    --card-gradient-fuchsia-hover: linear-gradient(to right, #d946ef, #e879f9);
+    --card-gradient-cyan: linear-gradient(to right, #0d1a4f, #73b3e2);
+    --card-gradient-violet: linear-gradient(to right, #0d1a4f, #73b3e2);
+    --card-gradient-blue: linear-gradient(to right, #0d1a4f, #73b3e2);
+    --card-gradient-fuchsia: linear-gradient(to right, #0d1a4f, #73b3e2);
+    --card-gradient-cyan-hover: linear-gradient(to right, #73b3e2, #0d1a4f);
+    --card-gradient-violet-hover: linear-gradient(to right, #73b3e2, #0d1a4f);
+    --card-gradient-blue-hover: linear-gradient(to right, #73b3e2, #0d1a4f);
+    --card-gradient-fuchsia-hover: linear-gradient(to right, #73b3e2, #0d1a4f);
     
     --sidebar-section: #ffffff;
     --sidebar-nav-link: #9a9cae;

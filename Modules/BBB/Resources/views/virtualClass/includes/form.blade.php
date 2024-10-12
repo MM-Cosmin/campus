@@ -127,7 +127,7 @@
                     @if ($user->role_id == 4)
                         <div class="row mt-15">
                             <div class="col-lg-12" id="selectTeacherDiv">
-                                <label for="teacher_ids" class="mb-2">@lang('common.teacher') </label>
+                                {{--  <label for="teacher_ids" class="mb-2">@lang('common.teacher') </label>  --}} 
                                 @foreach ($teachers as $teacher)
                                     <div class="">
                                         @if (isset($editdata))

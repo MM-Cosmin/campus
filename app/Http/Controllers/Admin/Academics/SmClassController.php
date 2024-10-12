@@ -14,6 +14,7 @@ use App\Http\Controllers\Controller;
 use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\Admin\Academics\ClassRequest;
+use Database\Seeders\sm_assign_class_teachersSeeder;
 
 class SmClassController extends Controller
 {
@@ -37,9 +38,17 @@ class SmClassController extends Controller
             }
             $sections = $data->where('school_id',auth()->user()->school_id)->get();
             $classes = SmClass::with('groupclassSections')->withCount('records')->get();
+            $doyennes =  DB::table('sm_class_teachers')
+            ->join('sm_staffs', 'sm_class_teachers.teacher_id', '=', 'sm_staffs.id')
+            ->join('sm_assign_class_teachers', 'sm_assign_class_teachers.id', '=', 'sm_class_teachers.assign_class_teacher_id')
+            ->join('sm_classes', 'sm_assign_class_teachers.class_id', '=', 'sm_classes.id')
+			->where('sm_class_teachers.academic_id', '=', getAcademicId())
+            ->where('sm_class_teachers.active_status', '=', 1)
+			->where('sm_class_teachers.dean', '=', 1)
+            ->select('sm_classes.class_name','sm_staffs.full_name')
+            ->get();
             
-    
-            return view('backEnd.academics.class', compact('classes', 'sections'));
+            return view('backEnd.academics.class', compact('classes', 'sections', 'doyennes'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -52,6 +61,9 @@ class SmClassController extends Controller
             try {
                 $class = new SmClass();
                 $class->class_name = $request->name;
+                $class->country = $request->country;
+                $class->city = $request->city;
+                $class->calendar = $request->calendar;
                 $class->pass_mark = $request->pass_mark;
                 $class->created_at = YearCheck::getYear() . '-' . date('m-d h:i:s');
                 $class->created_by=auth()->user()->id;
@@ -95,7 +107,17 @@ class SmClassController extends Controller
             $sections = SmSection::where('active_status', '=', 1)->where('created_at', 'LIKE', '%' . $this->date . '%')->where('academic_id', getAcademicId())->where('school_id', Auth::user()->school_id)->get();
 
             $classes = SmClass::where('active_status', '=', 1)->orderBy('id', 'desc')->where('academic_id', getAcademicId())->where('school_id', Auth::user()->school_id)->withCount('records')->get();
-            return view('backEnd.academics.class', compact('classById', 'classes', 'sections', 'sectionId'));
+			
+			$doyennes =  DB::table('sm_class_teachers')
+            ->join('sm_staffs', 'sm_class_teachers.teacher_id', '=', 'sm_staffs.id')
+            ->join('sm_assign_class_teachers', 'sm_assign_class_teachers.id', '=', 'sm_class_teachers.assign_class_teacher_id')
+            ->join('sm_classes', 'sm_assign_class_teachers.class_id', '=', 'sm_classes.id')
+			->where('sm_class_teachers.academic_id', '=', getAcademicId())
+            ->where('sm_class_teachers.active_status', '=', 1)
+            ->select('sm_classes.class_name','sm_staffs.full_name')
+            ->get();
+			
+            return view('backEnd.academics.class', compact('classById', 'classes', 'sections', 'sectionId', 'doyennes'));
         } catch (\Exception $e) {
             Toastr::error('Operation Failed', 'Failed');
             return redirect()->back();
@@ -106,13 +128,17 @@ class SmClassController extends Controller
     {
         SmCLassSection::where('class_id', $request->id)->delete();
         DB::beginTransaction();
-
+		
         try {
-            $class = SmCLass::find($request->id);
+            $class = SmCLass::find($request->id);			
             $class->class_name = $request->name;
-            $class->pass_mark = $request->pass_mark;
+            $class->country = $request->country;
+            $class->city = $request->city;
+            $class->calendar = $request->calendar;
+            $class->pass_mark = $request->pass_mark;			
             $class->save();
             $class->toArray();
+			
             try {
                 foreach ($request->section as $section) {
                     $smClassSection = new SmClassSection();
@@ -131,7 +157,7 @@ class SmClassController extends Controller
                 }
                 Toastr::success('Operation successful', 'Success');
                 return redirect('class');
-            } catch (\Exception $e) {
+            } catch (\Exception $e) {				
                 DB::rollBack();
             }
         } catch (\Exception $e) {

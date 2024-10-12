@@ -61,16 +61,14 @@
                     <div class="col-lg-12">
                         <div class="main-title">
                             @if (isSubscriptionEnabled() && auth()->user()->role_id == 1 && saasDomain() != 'school')
-                                <h3 class="mb-15">@lang('dashboard.welcome') - {{ @Auth::user()->school->school_name }} |
-                                    {{ @Auth::user()->roles->name }} |
+                                <h3 class="mb-15">@lang('dashboard.welcome') - {{ @Auth::user()->full_name}} @lang('dashboard.to') {{ @Auth::user()->school->school_name }}
                                     @lang('dashboard.active_package') : {{ @$package_info['package_name'] }} |
                                     @lang('dashboard.remain_days') : {{ @$package_info['remaining_days'] }} |
                                     @lang('dashboard.student') : {{ @$totalStudents }} out {{ @$package_info['student_quantity'] }} |
                                     @lang('common.staff') : {{ @$totalStaffs }} out {{ @$package_info['staff_quantity'] }}
                                 </h3>
                             @else
-                                <h3 class="mb-15">@lang('dashboard.welcome') - {{ @Auth::user()->school->school_name }} |
-                                    {{ @Auth::user()->roles->name }}</h3>
+                                <h3 class="mb-15">@lang('dashboard.welcome') - {{ @Auth::user()->full_name}} @lang('dashboard.to') {{ @Auth::user()->school->school_name }}</h3>
                             @endif
                         </div>
                     </div>

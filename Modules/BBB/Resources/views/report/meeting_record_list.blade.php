@@ -27,9 +27,6 @@
             </div>
         </div>
     </section>
-
-
-
     <section class="admin-visitor-area">
         <div class="container-fluid p-0">
             <div class="row">

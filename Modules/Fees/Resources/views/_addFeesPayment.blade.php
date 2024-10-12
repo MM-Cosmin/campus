@@ -322,10 +322,10 @@
                                         <th>@lang('common.sl')</th>
                                         <th>@lang('fees::feesModule.fees_type')</th>
                                         <th>@lang('accounts.amount')</th>
-                                        <th>@lang('fees::feesModule.due')</th>
+                                        <th style="display:none;">@lang('fees::feesModule.due')</th>
                                         <th>@lang('fees::feesModule.paid_amount')</th>
-                                        <th>@lang('exam.waiver')</th>
-                                        <th>@lang('fees::feesModule.fine')</th>
+                                        <th style="display:none;">@lang('exam.waiver')</th>										
+                                        <th style="display:none;">@lang('fees::feesModule.fine')</th>
                                         <th>@lang('common.action')</th>
                                     </tr>
                                     </thead>
@@ -337,9 +337,9 @@
                                         @foreach ($invoiceDetails as $key=>$invoiceDetail)
                                             <tr>
                                                 <td></td>
-                                                <input type="hidden" name="fees_type[]"
+                                                 <input type="hidden" name="fees_type[]"
                                                     value="{{$invoiceDetail->fees_type}}">
-                                                <td>{{@$invoiceDetail->feesType->name}}</td>
+                                                <td><div class="primary_input">{{@$invoiceDetail->feesType->name}}</div></td>
                                                 <td>
                                                     <div class="primary_input">
                                                         <input class="primary_input_field border-0 form-control addFeesAmount{{ $errors->has('amount') ? ' is-invalid' : '' }}"
@@ -354,7 +354,7 @@
                                                         @endif
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <td style="display:none;">
                                                     <div class="primary_input">
                                                         <input class="primary_input_field border-0 form-control showTotalValue"
                                                             type="text" name="due[]"
@@ -367,10 +367,10 @@
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    <input class="primary_input_field form-control addFeesPaidAmount" type="text"
-                                                        name="paid_amount[]" autocomplete="off">
+                                                    <input class="primary_input_field border-0 form-control addFeesPaidAmount" type="text"
+                                                        name="paid_amount[]" autocomplete="off" value="0" readonly>
                                                 </td>
-                                                <td>
+                                                <td style="display:none;">
                                                     @if (isset($role) && $role == 'admin')
                                                         <div class="primary_input">
                                                             <input class="primary_input_field form-control addFeesWeaver"
@@ -386,10 +386,10 @@
                                                             autocomplete="off" readonly>
                                                     @endif
                                                 </td>
-                                                <td>
+                                                <td style="display:none;">
                                                     @if (isset($role) && $role == 'admin')
                                                         <input class="primary_input_field form-control addFeesFine" type="text"
-                                                            name="fine[]" autocomplete="off" value="0">
+                                                            name="fine[]" autocomplete="off" value="0" readonly>
                                                     @else
                                                         <input class="primary_input_field border-0 form-control"
                                                             value="{{isset($invoiceDetail)? $invoiceDetail->fine:0}}"
@@ -539,10 +539,12 @@
             let amount= $(this).val()-0;
             showStudentPaidAmount+=amount;
         });
-        
+		$("#ttlpaidAmount").val($(".addFeesAmount").val());
+		$(".addFeesPaidAmount").val($(".addFeesAmount").val());
+		
         serviceCharge(gateway, showStudentPaidAmount, status);
     })
-    $(document).on('keyup', '.addFeesPaidAmount', function(){
+	$(document).on('keyup', '.addFeesPaidAmount', function(){
         let gateway = $('#paymentMethodAddFees').val();
         if(gateway == '') {           
             return ;
@@ -556,7 +558,7 @@
        
        
         serviceCharge(gateway, paidAmount, status);
-    })
+	})
     function serviceCharge(gateway, amount, status)
     {
         var symbol = "{{ generalSetting()->currency_symbol }}";

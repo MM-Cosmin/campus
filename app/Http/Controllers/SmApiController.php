@@ -11225,6 +11225,8 @@ class SmApiController extends Controller
             $input,
             [
                 'name' => "required|max:200|unique:sm_classes,class_name",
+                'country' => "max:100",
+                'city' => "max:150",
             ]
         );
 
@@ -11242,6 +11244,9 @@ class SmApiController extends Controller
         try {
             $class = new SmClass();
             $class->class_name = $request->name;
+            $class->country = $request->country;
+            $class->city = $request->city;
+            $class->calendar = $request->calendar;
             $class->created_at = YearCheck::getYear() . '-' . date('m-d h:i:s');
             $class->save();
             $class->toArray();

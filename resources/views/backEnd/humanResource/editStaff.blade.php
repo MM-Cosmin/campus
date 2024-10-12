@@ -54,7 +54,7 @@
                                         <a class="nav-link active" href="#basic_info" role="tab"
                                             data-toggle="tab">@lang('hr.basic_info')</a>
                                     </li>
-
+									@if (is_show(false))
                                     <li class="nav-item">
                                         <a class="nav-link" href="#payroll_details" role="tab"
                                             data-toggle="tab">@lang('hr.payroll_details')</a>
@@ -74,12 +74,11 @@
                                         <a class="nav-link" href="#document_info" role="tab"
                                             data-toggle="tab">@lang('hr.document_info')</a>
                                     </li>
-
                                     <li class="nav-item">
                                         <a class="nav-link" href="#custom_field" role="tab"
                                             data-toggle="tab">@lang('hr.custom_field')</a>
-                                    </li>
-
+                                    </li>									
+									@endif
                                     <li class="nav-item flex-grow-1 text-right">
                                         <div class="row">
                                             <div class="col-lg-12">
@@ -527,6 +526,26 @@
                                                                     </div>
                                                                 </div>
                                                             @endif
+															 @if (in_array('current_address', $has_permission))
+                                                                <div class="col-lg-6 mb-20">
+                                                                    <div class="primary_input">
+                                                                        <label class="primary_input_label"
+                                                                            for="">@lang('hr.current_address')
+                                                                            {{ in_array('current_address', $is_required) ? '*' : '' }}</label>
+                                                                        <textarea class="primary_input_field form-control" cols="0" rows="2" name="current_address"
+                                                                            id="current_address">
+                                                            @if (isset($editData)){{ $editData->current_address }}@endif
+                                                                </textarea>
+
+                                                                        <span class="focus-border textarea "></span>
+                                                                        @if ($errors->has('current_address'))
+                                                                            <span class="text-danger d-block">
+                                                                                {{ $errors->first('current_address') }}
+                                                                            </span>
+                                                                        @endif
+                                                                    </div>
+                                                                </div>
+                                                            @endif
                                                             @if (in_array('staff_photo', $has_permission))
                                                                 <div class="col-lg-6 mb-20">
                                                                     <div class="primary_input">
@@ -558,6 +577,7 @@
                                                                 alt="" id="staffImageShow" height="100%" width="100%">
                                                                 </div>
                                                             @endif
+															@if (is_show(false))
                                                             <div class="col-lg-6 mb-20">
                                                                 <div class="col-lg-12">
                                                                     <div class="row">
@@ -587,29 +607,11 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+															@endif
                                                             <!-- <div class="col-md-6">
-
+															
                                                             </div> -->
-                                                            @if (in_array('current_address', $has_permission))
-                                                                <div class="col-lg-6 mb-20">
-                                                                    <div class="primary_input">
-                                                                        <label class="primary_input_label"
-                                                                            for="">@lang('hr.current_address')
-                                                                            {{ in_array('current_address', $is_required) ? '*' : '' }}</label>
-                                                                        <textarea class="primary_input_field form-control" cols="0" rows="4" name="current_address"
-                                                                            id="current_address">
-                                                            @if (isset($editData)){{ $editData->current_address }}@endif
-                                                                </textarea>
-
-                                                                        <span class="focus-border textarea "></span>
-                                                                        @if ($errors->has('current_address'))
-                                                                            <span class="text-danger d-block">
-                                                                                {{ $errors->first('current_address') }}
-                                                                            </span>
-                                                                        @endif
-                                                                    </div>
-                                                                </div>
-                                                            @endif
+                                                           
 
                                                             @if (in_array('permanent_address', $has_permission))
                                                                 <div class="col-lg-6 mb-20">
